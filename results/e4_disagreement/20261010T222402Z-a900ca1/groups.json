@@ -1,0 +1,996 @@
+{
+ "thresholds": {
+  "semantic_max": 0.8048480451107025,
+  "kg_known_pairs": 0.7116123642439431
+ },
+ "ideas": [
+  {
+   "id": "calibration-idea-qwen3-4b-0",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Temporal Uncertainty Calibration in Sequential Neural Networks",
+   "group": "new combination",
+   "semantic_max": 0.6569984555244446,
+   "kg_known_pairs": 0.5272727272727272,
+   "nearest": "Computer Model Calibration with Time Series Data Using Deep Learning and Quantile Regression"
+  },
+  {
+   "id": "calibration-idea-qwen3-4b-1",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Dynamic Calibration via Adaptive Uncertainty Propagation",
+   "group": "new combination",
+   "semantic_max": 0.6229577660560608,
+   "kg_known_pairs": 0.48717948717948717,
+   "nearest": "Computer Model Calibration with Time Series Data Using Deep Learning and Quantile Regression"
+  },
+  {
+   "id": "calibration-idea-qwen3-4b-2",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Temporal Calibration in Sequential Neural Predictions",
+   "group": "new combination",
+   "semantic_max": 0.6166325211524963,
+   "kg_known_pairs": 0.6538461538461539,
+   "nearest": "Computer Model Calibration with Time Series Data Using Deep Learning and Quantile Regression"
+  },
+  {
+   "id": "calibration-idea-qwen3-4b-3",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Temporal Calibration Dynamics in Sequential Uncertainty Prediction",
+   "group": "new combination",
+   "semantic_max": 0.5485297441482544,
+   "kg_known_pairs": 0.4175824175824176,
+   "nearest": "Computer Model Calibration with Time Series Data Using Deep Learning and Quantile Regression"
+  },
+  {
+   "id": "calibration-idea-qwen3-4b-4",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Dynamic Uncertainty Weighting for Ensemble Calibration",
+   "group": "known combination",
+   "semantic_max": 0.6000373363494873,
+   "kg_known_pairs": 1.0,
+   "nearest": "Deep Neural Network Confidence Calibration from Stochastic Weight Averaging"
+  },
+  {
+   "id": "calibration-idea-qwen3-4b-5",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Temporal Calibration Networks for Dynamic Uncertainty Evolution",
+   "group": "new combination",
+   "semantic_max": 0.5926216244697571,
+   "kg_known_pairs": 0.6071428571428571,
+   "nearest": "A survey of uncertainty in deep neural networks"
+  },
+  {
+   "id": "calibration-idea-qwen3-4b-6",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Temporal Calibration in Sequential Decision-Making",
+   "group": "new combination",
+   "semantic_max": 0.5706557631492615,
+   "kg_known_pairs": 0.4444444444444444,
+   "nearest": "Closed-Loop Uncertainty: The Evaluation and Calibration of Uncertainty for Human–Machine Teams under Data Drift"
+  },
+  {
+   "id": "calibration-idea-qwen3-4b-7",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Temporal Calibration in Sequential Decision-Making",
+   "group": "known combination",
+   "semantic_max": 0.5953704118728638,
+   "kg_known_pairs": 0.75,
+   "nearest": "Closed-Loop Uncertainty: The Evaluation and Calibration of Uncertainty for Human–Machine Teams under Data Drift"
+  },
+  {
+   "id": "calibration-idea-phi-4-mini-0",
+   "topic": "calibration",
+   "model": "phi-4-mini",
+   "title": "Uncertainty Quantification in Multimodal Neural Networks",
+   "group": "known combination",
+   "semantic_max": 0.6520482301712036,
+   "kg_known_pairs": 0.9642857142857143,
+   "nearest": "A survey of uncertainty in deep neural networks"
+  },
+  {
+   "id": "calibration-idea-phi-4-mini-1",
+   "topic": "calibration",
+   "model": "phi-4-mini",
+   "title": "Enhancing Uncertainty Calibration in Neural Networks using Bayesian Optimization",
+   "group": "new combination",
+   "semantic_max": 0.7066459655761719,
+   "kg_known_pairs": 0.4358974358974359,
+   "nearest": "A survey of uncertainty in deep neural networks"
+  },
+  {
+   "id": "calibration-idea-phi-4-mini-2",
+   "topic": "calibration",
+   "model": "phi-4-mini",
+   "title": "Uncertainty Calibration via Bayesian Neural Networks for Dynamic Domains",
+   "group": "known combination",
+   "semantic_max": 0.6520074605941772,
+   "kg_known_pairs": 0.7818181818181819,
+   "nearest": "Uncertainty-Aware Parking Prediction Using Bayesian Neural Networks"
+  },
+  {
+   "id": "calibration-idea-phi-4-mini-3",
+   "topic": "calibration",
+   "model": "phi-4-mini",
+   "title": "Adaptive Uncertainty Calibration for Dynamic Dataset Environments",
+   "group": "new combination",
+   "semantic_max": 0.5798479318618774,
+   "kg_known_pairs": 0.5333333333333333,
+   "nearest": "A survey of uncertainty in deep neural networks"
+  },
+  {
+   "id": "calibration-idea-phi-4-mini-4",
+   "topic": "calibration",
+   "model": "phi-4-mini",
+   "title": "Multi-Stage Uncertainty Calibration Using Ensemble Learning",
+   "group": "new combination",
+   "semantic_max": 0.6073039174079895,
+   "kg_known_pairs": 0.5714285714285714,
+   "nearest": "Deep Neural Network Confidence Calibration from Stochastic Weight Averaging"
+  },
+  {
+   "id": "calibration-idea-phi-4-mini-5",
+   "topic": "calibration",
+   "model": "phi-4-mini",
+   "title": "Adaptive Uncertainty Propagation in Multi-Task Learning Networks",
+   "group": "new combination",
+   "semantic_max": 0.5016990303993225,
+   "kg_known_pairs": 0.5777777777777777,
+   "nearest": "A survey of uncertainty in deep neural networks"
+  },
+  {
+   "id": "calibration-idea-phi-4-mini-6",
+   "topic": "calibration",
+   "model": "phi-4-mini",
+   "title": "Adaptive Uncertainty Quantification for Dynamic Environments",
+   "group": "new combination",
+   "semantic_max": 0.6010468006134033,
+   "kg_known_pairs": 0.6666666666666666,
+   "nearest": "Expressing uncertainty in neural networks for production systems"
+  },
+  {
+   "id": "calibration-idea-phi-4-mini-7",
+   "topic": "calibration",
+   "model": "phi-4-mini",
+   "title": "Adaptive Uncertainty Quantification for Real-Time Applications",
+   "group": "new combination",
+   "semantic_max": 0.6392773985862732,
+   "kg_known_pairs": 0.4166666666666667,
+   "nearest": "A survey of uncertainty in deep neural networks"
+  },
+  {
+   "id": "battery-idea-phi-4-mini-0",
+   "topic": "battery",
+   "model": "phi-4-mini",
+   "title": "Predictive Modeling for Fast-Charging Battery Degradation",
+   "group": "known combination",
+   "semantic_max": 0.7309616804122925,
+   "kg_known_pairs": 0.7333333333333333,
+   "nearest": "Real-Time Lithium Battery Aging Prediction Based on Capacity Estimation and Deep Learning Methods"
+  },
+  {
+   "id": "battery-idea-phi-4-mini-1",
+   "topic": "battery",
+   "model": "phi-4-mini",
+   "title": "Multi-Scale Electromagnetic Impedance Modeling for Battery State-of-Health Estimation",
+   "group": "new combination",
+   "semantic_max": 0.7821146249771118,
+   "kg_known_pairs": 0.6143790849673203,
+   "nearest": "Summary of Health-State Estimation of Lithium-Ion Batteries Based on Electrochemical Impedance Spectroscopy"
+  },
+  {
+   "id": "battery-idea-phi-4-mini-2",
+   "topic": "battery",
+   "model": "phi-4-mini",
+   "title": "Adaptive Machine Learning for Real-Time Battery State-of-Health Estimation",
+   "group": "near-duplicate",
+   "semantic_max": 0.8354084491729736,
+   "kg_known_pairs": 0.7121212121212122,
+   "nearest": "An Extensive Study on Machine Learning based Battery Health Estimation"
+  },
+  {
+   "id": "battery-idea-phi-4-mini-3",
+   "topic": "battery",
+   "model": "phi-4-mini",
+   "title": "Advanced Multi-Scale Feature Fusion for Battery SoH Estimation",
+   "group": "new combination",
+   "semantic_max": 0.7808437943458557,
+   "kg_known_pairs": 0.6,
+   "nearest": "Estimation of Lithium-Ion Battery State of Health-Based Multi-Feature Analysis and Convolutional Neural Network–Long Short-Term Memory"
+  },
+  {
+   "id": "battery-idea-phi-4-mini-4",
+   "topic": "battery",
+   "model": "phi-4-mini",
+   "title": "Integration of Acoustic Emission Monitoring in Battery State-of-Health Estimation",
+   "group": "known combination",
+   "semantic_max": 0.7688322067260742,
+   "kg_known_pairs": 0.8181818181818182,
+   "nearest": "Application of machine learning in ultrasonic diagnostics for prismatic lithium-ion battery degradation evaluation"
+  },
+  {
+   "id": "battery-idea-phi-4-mini-5",
+   "topic": "battery",
+   "model": "phi-4-mini",
+   "title": "Real-time Battery SoH Estimation Using Machine Learning and Hardware-in-the-Loop Testing",
+   "group": "new combination",
+   "semantic_max": 0.7696490287780762,
+   "kg_known_pairs": 0.6818181818181818,
+   "nearest": "Battery State-of-Health Estimation Using Machine Learning and Preprocessing with Relative State-of-Charge"
+  },
+  {
+   "id": "battery-idea-phi-4-mini-6",
+   "topic": "battery",
+   "model": "phi-4-mini",
+   "title": "Real-time Multi-Metric Battery State-of-Health Estimation",
+   "group": "near-duplicate",
+   "semantic_max": 0.8194557428359985,
+   "kg_known_pairs": 0.49166666666666664,
+   "nearest": "Electric vehicle battery capacity degradation and health estimation using machine-learning techniques: a review"
+  },
+  {
+   "id": "battery-idea-phi-4-mini-7",
+   "topic": "battery",
+   "model": "phi-4-mini",
+   "title": "Predictive Battery Aging Using Graph Neural Networks",
+   "group": "near-duplicate",
+   "semantic_max": 0.8102943897247314,
+   "kg_known_pairs": 0.6923076923076923,
+   "nearest": "A Graph‐Based Lithium‐Ion Battery Parameter Estimation Approach to Produce Diverse Synthetic Data"
+  },
+  {
+   "id": "federated-idea-phi-4-mini-0",
+   "topic": "federated",
+   "model": "phi-4-mini",
+   "title": "Enhancing Differential Privacy in Federated Learning for Real-Time Applications",
+   "group": "near-duplicate",
+   "semantic_max": 0.8259971141815186,
+   "kg_known_pairs": 0.7134502923976608,
+   "nearest": "APDP-FL: Personalized Federated Learning Based on Adaptive Differential Privacy"
+  },
+  {
+   "id": "federated-idea-phi-4-mini-1",
+   "topic": "federated",
+   "model": "phi-4-mini",
+   "title": "Enhancing Privacy in Federated Learning through Secure Multi-Party Computation (SMPC)",
+   "group": "near-duplicate",
+   "semantic_max": 0.8487725257873535,
+   "kg_known_pairs": 0.696969696969697,
+   "nearest": "Exploring privacy mechanisms and metrics in federated learning"
+  },
+  {
+   "id": "federated-idea-phi-4-mini-2",
+   "topic": "federated",
+   "model": "phi-4-mini",
+   "title": "Enhancing Privacy in Federated Learning via Differential Data Representation",
+   "group": "near-duplicate",
+   "semantic_max": 0.8600859642028809,
+   "kg_known_pairs": 0.6666666666666666,
+   "nearest": "Optimizing differential privacy in a federated learning framework: strategies for dynamic clipping and privacy allocation"
+  },
+  {
+   "id": "federated-idea-phi-4-mini-3",
+   "topic": "federated",
+   "model": "phi-4-mini",
+   "title": "Privacy-Preserving Differential Privacy for Federated Learning",
+   "group": "near-duplicate",
+   "semantic_max": 0.8727628588676453,
+   "kg_known_pairs": 0.8666666666666667,
+   "nearest": "Optimizing differential privacy in a federated learning framework: strategies for dynamic clipping and privacy allocation"
+  },
+  {
+   "id": "federated-idea-phi-4-mini-4",
+   "topic": "federated",
+   "model": "phi-4-mini",
+   "title": "Adaptive Differential Privacy for Federated Learning",
+   "group": "near-duplicate",
+   "semantic_max": 0.896656334400177,
+   "kg_known_pairs": 0.75,
+   "nearest": "Optimizing differential privacy in a federated learning framework: strategies for dynamic clipping and privacy allocation"
+  },
+  {
+   "id": "federated-idea-phi-4-mini-5",
+   "topic": "federated",
+   "model": "phi-4-mini",
+   "title": "Privacy-Preserving Federated Learning with Differential Homomorphic Encryption",
+   "group": "near-duplicate",
+   "semantic_max": 0.879452645778656,
+   "kg_known_pairs": 0.85,
+   "nearest": "Exploring Homomorphic Encryption and Differential Privacy Techniques towards Secure Federated Learning Paradigm"
+  },
+  {
+   "id": "federated-idea-phi-4-mini-6",
+   "topic": "federated",
+   "model": "phi-4-mini",
+   "title": "Privacy Preservation in Federated Learning using Differential Privacy and Homomorphic Encryption",
+   "group": "near-duplicate",
+   "semantic_max": 0.8691807985305786,
+   "kg_known_pairs": 0.8398268398268398,
+   "nearest": "Exploring Homomorphic Encryption and Differential Privacy Techniques towards Secure Federated Learning Paradigm"
+  },
+  {
+   "id": "federated-idea-phi-4-mini-7",
+   "topic": "federated",
+   "model": "phi-4-mini",
+   "title": "Privacy-Preserving Federated Learning with Differential Privacy Guarantees",
+   "group": "near-duplicate",
+   "semantic_max": 0.8831475973129272,
+   "kg_known_pairs": 0.7428571428571429,
+   "nearest": "Optimizing differential privacy in a federated learning framework: strategies for dynamic clipping and privacy allocation"
+  },
+  {
+   "id": "crispr-idea-phi-4-mini-0",
+   "topic": "crispr",
+   "model": "phi-4-mini",
+   "title": "Machine Learning-Based CRISPR Off-Target Prediction",
+   "group": "near-duplicate",
+   "semantic_max": 0.8297199010848999,
+   "kg_known_pairs": 0.6825396825396826,
+   "nearest": "Anticipating On‐Target and Off‐Target Effects of CRISPR/Cas9 Genome Editing Via a Feedforward Neural Network Model"
+  },
+  {
+   "id": "crispr-idea-phi-4-mini-1",
+   "topic": "crispr",
+   "model": "phi-4-mini",
+   "title": "Predicting CRISPR-Cas9 Off-Target Effects Using Machine Learning",
+   "group": "near-duplicate",
+   "semantic_max": 0.8356788158416748,
+   "kg_known_pairs": 0.6433333333333333,
+   "nearest": "Deep Learning Based Models for CRISPR/Cas Off‐Target Prediction"
+  },
+  {
+   "id": "crispr-idea-phi-4-mini-2",
+   "topic": "crispr",
+   "model": "phi-4-mini",
+   "title": "Advanced Machine Learning-Based Off-Target Prediction for CRISPR-Cas9",
+   "group": "near-duplicate",
+   "semantic_max": 0.8822490572929382,
+   "kg_known_pairs": 0.847953216374269,
+   "nearest": "Off-target predictions in CRISPR-Cas9 gene editing using deep learning"
+  },
+  {
+   "id": "crispr-idea-phi-4-mini-3",
+   "topic": "crispr",
+   "model": "phi-4-mini",
+   "title": "Enhancing CRISPR-Cas9 Off-Target Prediction Using Deep Learning on Multi-omics Data",
+   "group": "near-duplicate",
+   "semantic_max": 0.8425157070159912,
+   "kg_known_pairs": 0.725,
+   "nearest": "CRISPR-DIPOFF: an interpretable deep learning approach for CRISPR Cas-9 off-target prediction"
+  },
+  {
+   "id": "crispr-idea-phi-4-mini-4",
+   "topic": "crispr",
+   "model": "phi-4-mini",
+   "title": "Development of a Deep Learning-Based Predictive Model for CRISPR-Cas9 Off-Target Sites",
+   "group": "near-duplicate",
+   "semantic_max": 0.8530600070953369,
+   "kg_known_pairs": 0.7426470588235294,
+   "nearest": "CRISPR-DIPOFF: an interpretable deep learning approach for CRISPR Cas-9 off-target prediction"
+  },
+  {
+   "id": "crispr-idea-phi-4-mini-5",
+   "topic": "crispr",
+   "model": "phi-4-mini",
+   "title": "Enhanced Machine Learning Algorithms for CRISPR Off-Target Prediction",
+   "group": "known combination",
+   "semantic_max": 0.7733268737792969,
+   "kg_known_pairs": 0.8666666666666667,
+   "nearest": "CRISPR-M: Predicting sgRNA off-target effect using a multi-view deep learning network"
+  },
+  {
+   "id": "crispr-idea-phi-4-mini-6",
+   "topic": "crispr",
+   "model": "phi-4-mini",
+   "title": "Enhanced Machine Learning for Off-Target Prediction in CRISPR-Cas9",
+   "group": "known combination",
+   "semantic_max": 0.8042030334472656,
+   "kg_known_pairs": 0.7818181818181819,
+   "nearest": "Machine Learning-Driven Prediction of CRISPR-Cas9 Off-Target Effects and Mechanistic Insights"
+  },
+  {
+   "id": "crispr-idea-phi-4-mini-7",
+   "topic": "crispr",
+   "model": "phi-4-mini",
+   "title": "Advanced Machine Learning Model for Off-Target Prediction in CRISPR-Cas9 Editing",
+   "group": "near-duplicate",
+   "semantic_max": 0.8493713736534119,
+   "kg_known_pairs": 0.7660818713450293,
+   "nearest": "CRISPR-DIPOFF: an interpretable deep learning approach for CRISPR Cas-9 off-target prediction"
+  },
+  {
+   "id": "urban_heat-idea-phi-4-mini-0",
+   "topic": "urban_heat",
+   "model": "phi-4-mini",
+   "title": "Integrating Vertical Gardens into Urban Infrastructure",
+   "group": "near-duplicate",
+   "semantic_max": 0.8158578872680664,
+   "kg_known_pairs": 0.7572463768115942,
+   "nearest": "Urban gardening for mitigating heat island effect"
+  },
+  {
+   "id": "urban_heat-idea-phi-4-mini-1",
+   "topic": "urban_heat",
+   "model": "phi-4-mini",
+   "title": "Evaluating the Impact of Green Roofs on Urban Heat Island Effect in Suburban Areas",
+   "group": "near-duplicate",
+   "semantic_max": 0.8532482385635376,
+   "kg_known_pairs": 0.8853754940711462,
+   "nearest": "Energy consumption and heat island effect mitigation analysis of different roofs considering superposition coupling"
+  },
+  {
+   "id": "urban_heat-idea-phi-4-mini-2",
+   "topic": "urban_heat",
+   "model": "phi-4-mini",
+   "title": "Green Roof Microclimate Modulation",
+   "group": "near-duplicate",
+   "semantic_max": 0.815168023109436,
+   "kg_known_pairs": 0.7633333333333333,
+   "nearest": "Evaluating the Urban Heat Mitigation Potential of a Living Wall in Milan: One Year of Microclimate Monitoring"
+  },
+  {
+   "id": "urban_heat-idea-phi-4-mini-3",
+   "topic": "urban_heat",
+   "model": "phi-4-mini",
+   "title": "Impact of Urban Greenery on Nighttime Radiative Cooling in Urban Heat Islands",
+   "group": "new combination",
+   "semantic_max": 0.8009323477745056,
+   "kg_known_pairs": 0.6766666666666666,
+   "nearest": "Modelling the impact of green solutions upon the urban heat island phenomenon by means of satellite data"
+  },
+  {
+   "id": "urban_heat-idea-phi-4-mini-4",
+   "topic": "urban_heat",
+   "model": "phi-4-mini",
+   "title": "Integrating Urban Forests with Cool Pavements for Enhanced Heat Mitigation",
+   "group": "new combination",
+   "semantic_max": 0.7969447374343872,
+   "kg_known_pairs": 0.626984126984127,
+   "nearest": "Combating Urban Heat Island Effect—A Review of Reflective Pavements and Tree Shading Strategies"
+  },
+  {
+   "id": "urban_heat-idea-phi-4-mini-5",
+   "topic": "urban_heat",
+   "model": "phi-4-mini",
+   "title": "Impact of Urban Vertical Gardens on Heat Island Mitigation",
+   "group": "near-duplicate",
+   "semantic_max": 0.8437524437904358,
+   "kg_known_pairs": 0.6955645161290323,
+   "nearest": "Urban gardening for mitigating heat island effect"
+  },
+  {
+   "id": "urban_heat-idea-phi-4-mini-6",
+   "topic": "urban_heat",
+   "model": "phi-4-mini",
+   "title": "Impact of Vertical Gardens on Urban Heat Island Mitigation",
+   "group": "near-duplicate",
+   "semantic_max": 0.8077248334884644,
+   "kg_known_pairs": 0.8333333333333334,
+   "nearest": "Mitigating urban heat island and enhancing indoor thermal comfort using terrace garden"
+  },
+  {
+   "id": "urban_heat-idea-phi-4-mini-7",
+   "topic": "urban_heat",
+   "model": "phi-4-mini",
+   "title": "Urban Green Roofs with Integrated Solar Panels",
+   "group": "near-duplicate",
+   "semantic_max": 0.8171870708465576,
+   "kg_known_pairs": 0.7973856209150327,
+   "nearest": "Energy consumption and heat island effect mitigation analysis of different roofs considering superposition coupling"
+  },
+  {
+   "id": "misinformation-idea-phi-4-mini-0",
+   "topic": "misinformation",
+   "model": "phi-4-mini",
+   "title": "Cross-Platform Misinformation Detection Using Multimodal Analysis",
+   "group": "near-duplicate",
+   "semantic_max": 0.8470319509506226,
+   "kg_known_pairs": 0.85,
+   "nearest": "Detecting Misinformation Using Multimodal AI Models on Social Media Platforms"
+  },
+  {
+   "id": "misinformation-idea-phi-4-mini-1",
+   "topic": "misinformation",
+   "model": "phi-4-mini",
+   "title": "Real-time Misinformation Detection Using Social Media Sentiment Analysis",
+   "group": "known combination",
+   "semantic_max": 0.6711580753326416,
+   "kg_known_pairs": 0.725,
+   "nearest": "Fake News Detection Model on Social Media by Leveraging Sentiment Analysis of News Content and Emotion Analysis of Users’ Comments"
+  },
+  {
+   "id": "misinformation-idea-phi-4-mini-2",
+   "topic": "misinformation",
+   "model": "phi-4-mini",
+   "title": "Predictive Modeling of Misinformation Spread on Social Media",
+   "group": "new combination",
+   "semantic_max": 0.7311364412307739,
+   "kg_known_pairs": 0.7058823529411765,
+   "nearest": "Misinformation in Social Media"
+  },
+  {
+   "id": "misinformation-idea-phi-4-mini-3",
+   "topic": "misinformation",
+   "model": "phi-4-mini",
+   "title": "Cross-Linguistic Misinformation Detection on Social Media",
+   "group": "known combination",
+   "semantic_max": 0.6753164529800415,
+   "kg_known_pairs": 0.8181818181818182,
+   "nearest": "A Framework for Enhancing Social Media Misinformation Detection with Topical-Tactics"
+  },
+  {
+   "id": "misinformation-idea-phi-4-mini-4",
+   "topic": "misinformation",
+   "model": "phi-4-mini",
+   "title": "Detecting Emotional Manipulation in Social Media Posts",
+   "group": "known combination",
+   "semantic_max": 0.6011695861816406,
+   "kg_known_pairs": 0.7132352941176471,
+   "nearest": "The unappreciated role of intent in algorithmic moderation of abusive content on social media"
+  },
+  {
+   "id": "misinformation-idea-phi-4-mini-5",
+   "topic": "misinformation",
+   "model": "phi-4-mini",
+   "title": "Cross-Linguistic Misinformation Detection Using Multilingual Pre-training Models",
+   "group": "known combination",
+   "semantic_max": 0.6797767877578735,
+   "kg_known_pairs": 0.8095238095238095,
+   "nearest": "Multiverse: Multilingual Evidence for Fake News Detection"
+  },
+  {
+   "id": "misinformation-idea-phi-4-mini-6",
+   "topic": "misinformation",
+   "model": "phi-4-mini",
+   "title": "Cross-Lingual Misinformation Detection on Social Media",
+   "group": "new combination",
+   "semantic_max": 0.6848392486572266,
+   "kg_known_pairs": 0.5333333333333333,
+   "nearest": "A Framework for Enhancing Social Media Misinformation Detection with Topical-Tactics"
+  },
+  {
+   "id": "misinformation-idea-phi-4-mini-7",
+   "topic": "misinformation",
+   "model": "phi-4-mini",
+   "title": "Cross-Linguistic Misinformation Detection using Multilingual Transformers",
+   "group": "known combination",
+   "semantic_max": 0.6803691387176514,
+   "kg_known_pairs": 0.7777777777777778,
+   "nearest": "Multiverse: Multilingual Evidence for Fake News Detection"
+  },
+  {
+   "id": "battery-idea-qwen3-4b-0",
+   "topic": "battery",
+   "model": "qwen3-4b",
+   "title": "Real-time Degradation Mode Detection Using Adaptive Deep Neural Networks with Physically-Informed Constraints",
+   "group": "known combination",
+   "semantic_max": 0.7606004476547241,
+   "kg_known_pairs": 0.7391304347826086,
+   "nearest": "Combining Thermal–Electrochemical Modeling and Deep Learning: A Physics-Constrained GRU for State-of-Health Estimation of Li-Ion Cells"
+  },
+  {
+   "id": "battery-idea-qwen3-4b-1",
+   "topic": "battery",
+   "model": "qwen3-4b",
+   "title": "Adaptive Deep Learning with Physics-Informed Regularization for Real-Time Battery SOH Estimation",
+   "group": "known combination",
+   "semantic_max": 0.8000532388687134,
+   "kg_known_pairs": 0.8181818181818182,
+   "nearest": "Evaluation of Advances in Battery Health Prediction for Electric Vehicles from Traditional Linear Filters to Latest Machine Learning Approaches"
+  },
+  {
+   "id": "battery-idea-qwen3-4b-2",
+   "topic": "battery",
+   "model": "qwen3-4b",
+   "title": "Real-Time Degradation Mode Detection Using Physics-Informed Neural ODEs",
+   "group": "new combination",
+   "semantic_max": 0.7195358276367188,
+   "kg_known_pairs": 0.5909090909090909,
+   "nearest": "State of Health Estimation of Lithium-Ion Batteries Based on Electrochemical Impedance Spectroscopy and Backpropagation Neural Network"
+  },
+  {
+   "id": "battery-idea-qwen3-4b-3",
+   "topic": "battery",
+   "model": "qwen3-4b",
+   "title": "Online Learning of Battery Degradation Patterns Using Temporal Convolutional Networks with Adaptive Feature Selection",
+   "group": "known combination",
+   "semantic_max": 0.7889156341552734,
+   "kg_known_pairs": 0.7580645161290323,
+   "nearest": "Estimation of Lithium-Ion Battery State of Health-Based Multi-Feature Analysis and Convolutional Neural Network–Long Short-Term Memory"
+  },
+  {
+   "id": "battery-idea-qwen3-4b-4",
+   "topic": "battery",
+   "model": "qwen3-4b",
+   "title": "Adaptive Deep Learning for Real-Time Battery State-of-Health Estimation under Dynamic Usage Patterns",
+   "group": "new combination",
+   "semantic_max": 0.7968937158584595,
+   "kg_known_pairs": 0.6123076923076923,
+   "nearest": "Deep Learning for State of Health Estimation of Lithium-Ion Batteries in Electric Vehicles: A Systematic Review"
+  },
+  {
+   "id": "battery-idea-qwen3-4b-5",
+   "topic": "battery",
+   "model": "qwen3-4b",
+   "title": "Online Learning of Battery Degradation Pathways Using Temporal Graph Neural Networks",
+   "group": "new combination",
+   "semantic_max": 0.7511430978775024,
+   "kg_known_pairs": 0.6723646723646723,
+   "nearest": "A Graph‐Based Lithium‐Ion Battery Parameter Estimation Approach to Produce Diverse Synthetic Data"
+  },
+  {
+   "id": "battery-idea-qwen3-4b-6",
+   "topic": "battery",
+   "model": "qwen3-4b",
+   "title": "Online Learning of Battery Degradation Pathways Using Temporal Graph Neural Networks",
+   "group": "new combination",
+   "semantic_max": 0.7545199394226074,
+   "kg_known_pairs": 0.644927536231884,
+   "nearest": "Electric vehicle battery capacity degradation and health estimation using machine-learning techniques: a review"
+  },
+  {
+   "id": "battery-idea-qwen3-4b-7",
+   "topic": "battery",
+   "model": "qwen3-4b",
+   "title": "Real-Time Degradation Mode Detection Using Online Adaptive Bayesian Networks",
+   "group": "known combination",
+   "semantic_max": 0.7125118970870972,
+   "kg_known_pairs": 0.7763440860215054,
+   "nearest": "Li‐Ion Battery State of Health Estimation Using Hybrid Decision Tree Model Optimized by Bayesian Optimization"
+  },
+  {
+   "id": "federated-idea-qwen3-4b-0",
+   "topic": "federated",
+   "model": "qwen3-4b",
+   "title": "Private Model Averaging with Differential Privacy and Adaptive Noise Calibration",
+   "group": "near-duplicate",
+   "semantic_max": 0.8450136780738831,
+   "kg_known_pairs": 0.7309941520467836,
+   "nearest": "Federated Learning with Differential Privacy: Balancing Model Performance and Data Protection in Distributed AI Systems"
+  },
+  {
+   "id": "federated-idea-qwen3-4b-1",
+   "topic": "federated",
+   "model": "qwen3-4b",
+   "title": "Differential Privacy with Adaptive Local Noise in Federated Learning",
+   "group": "near-duplicate",
+   "semantic_max": 0.8790835738182068,
+   "kg_known_pairs": 0.7619047619047619,
+   "nearest": "APDP-FL: Personalized Federated Learning Based on Adaptive Differential Privacy"
+  },
+  {
+   "id": "federated-idea-qwen3-4b-2",
+   "topic": "federated",
+   "model": "qwen3-4b",
+   "title": "Private Model Aggregation via Differential Privacy and Adaptive Sampling",
+   "group": "near-duplicate",
+   "semantic_max": 0.826008141040802,
+   "kg_known_pairs": 0.8078817733990148,
+   "nearest": "Optimizing differential privacy in a federated learning framework: strategies for dynamic clipping and privacy allocation"
+  },
+  {
+   "id": "federated-idea-qwen3-4b-3",
+   "topic": "federated",
+   "model": "qwen3-4b",
+   "title": "Privacy-Preserving Model Aggregation via Homomorphic Encryption with Adaptive Key Rotation",
+   "group": "near-duplicate",
+   "semantic_max": 0.8116531372070312,
+   "kg_known_pairs": 0.9002849002849003,
+   "nearest": "Secure and Flexible Privacy-Preserving Federated Learning Based on Multi-Key Fully Homomorphic Encryption"
+  },
+  {
+   "id": "federated-idea-qwen3-4b-4",
+   "topic": "federated",
+   "model": "qwen3-4b",
+   "title": "Differential Privacy with Adaptive Communication in Federated Learning",
+   "group": "near-duplicate",
+   "semantic_max": 0.8468666076660156,
+   "kg_known_pairs": 0.7157894736842105,
+   "nearest": "APDP-FL: Personalized Federated Learning Based on Adaptive Differential Privacy"
+  },
+  {
+   "id": "federated-idea-qwen3-4b-5",
+   "topic": "federated",
+   "model": "qwen3-4b",
+   "title": "Privacy-Preserving Federated Learning with Differential Privacy and Dynamic Model Aggregation",
+   "group": "near-duplicate",
+   "semantic_max": 0.8733303546905518,
+   "kg_known_pairs": 0.8064516129032258,
+   "nearest": "An Asynchronous Federated Learning Aggregation Method Based on Adaptive Differential Privacy"
+  },
+  {
+   "id": "federated-idea-qwen3-4b-6",
+   "topic": "federated",
+   "model": "qwen3-4b",
+   "title": "Privacy-Preserving Model Aggregation via Differential Privacy with Adaptive Noise Calibration",
+   "group": "near-duplicate",
+   "semantic_max": 0.8728641867637634,
+   "kg_known_pairs": 0.7905138339920948,
+   "nearest": "Federated Learning with Differential Privacy: Balancing Model Performance and Data Protection in Distributed AI Systems"
+  },
+  {
+   "id": "federated-idea-qwen3-4b-7",
+   "topic": "federated",
+   "model": "qwen3-4b",
+   "title": "Private Model Aggregation with Differential Privacy and Adaptive Noise Calibration",
+   "group": "near-duplicate",
+   "semantic_max": 0.8728621006011963,
+   "kg_known_pairs": 0.7865612648221344,
+   "nearest": "Federated Learning with Differential Privacy: Balancing Model Performance and Data Protection in Distributed AI Systems"
+  },
+  {
+   "id": "crispr-idea-qwen3-4b-0",
+   "topic": "crispr",
+   "model": "qwen3-4b",
+   "title": "Context-Adaptive Off-Target Prediction Using Dynamic Regulatory Landscape Modeling",
+   "group": "new combination",
+   "semantic_max": 0.6382142305374146,
+   "kg_known_pairs": 0.5904761904761905,
+   "nearest": "Locus-specific histone deacetylation using a synthetic CRISPR-Cas9-based HDAC"
+  },
+  {
+   "id": "crispr-idea-qwen3-4b-1",
+   "topic": "crispr",
+   "model": "qwen3-4b",
+   "title": "Context-Aware Off-Target Prediction Using Neural Sequence Embeddings",
+   "group": "known combination",
+   "semantic_max": 0.7456523180007935,
+   "kg_known_pairs": 0.7661538461538462,
+   "nearest": "Improved CRISPR/Cas9 off-target prediction with DNABERT and epigenetic features"
+  },
+  {
+   "id": "crispr-idea-qwen3-4b-2",
+   "topic": "crispr",
+   "model": "qwen3-4b",
+   "title": "Context-Aware Deep Learning for Off-Target Prediction in Non-Canonical Genomic Regions",
+   "group": "new combination",
+   "semantic_max": 0.7863883972167969,
+   "kg_known_pairs": 0.6143790849673203,
+   "nearest": "Improved CRISPR/Cas9 off-target prediction with DNABERT and epigenetic features"
+  },
+  {
+   "id": "crispr-idea-qwen3-4b-3",
+   "topic": "crispr",
+   "model": "qwen3-4b",
+   "title": "Context-Aware Off-Target Prediction Using Epigenetic and Chromatin State Dynamics",
+   "group": "new combination",
+   "semantic_max": 0.7214497327804565,
+   "kg_known_pairs": 0.5714285714285714,
+   "nearest": "Comprehensive computational analysis of epigenetic descriptors affecting CRISPR-Cas9 off-target activity"
+  },
+  {
+   "id": "crispr-idea-qwen3-4b-4",
+   "topic": "crispr",
+   "model": "qwen3-4b",
+   "title": "Context-Aware Deep Learning for Predicting CRISPR Off-Target Effects in Non-Canonical Genomic Contexts",
+   "group": "new combination",
+   "semantic_max": 0.7747217416763306,
+   "kg_known_pairs": 0.5873015873015873,
+   "nearest": "Using traditional machine learning and deep learning methods for on- and off-target prediction in CRISPR/Cas9: a review"
+  },
+  {
+   "id": "crispr-idea-qwen3-4b-5",
+   "topic": "crispr",
+   "model": "qwen3-4b",
+   "title": "Context-Aware Deep Learning for Off-Target Prediction in Non-Canonical Genomic Regions",
+   "group": "new combination",
+   "semantic_max": 0.7450275421142578,
+   "kg_known_pairs": 0.6892307692307692,
+   "nearest": "Improved CRISPR/Cas9 off-target prediction with DNABERT and epigenetic features"
+  },
+  {
+   "id": "crispr-idea-qwen3-4b-6",
+   "topic": "crispr",
+   "model": "qwen3-4b",
+   "title": "Context-aware off-target prediction using dynamic chromatin state modeling",
+   "group": "new combination",
+   "semantic_max": 0.7432401776313782,
+   "kg_known_pairs": 0.6733333333333333,
+   "nearest": "Using traditional machine learning and deep learning methods for on- and off-target prediction in CRISPR/Cas9: a review"
+  },
+  {
+   "id": "crispr-idea-qwen3-4b-7",
+   "topic": "crispr",
+   "model": "qwen3-4b",
+   "title": "Context-Aware Deep Learning for Off-Target Prediction in Non-Canonical Genomic Regions",
+   "group": "new combination",
+   "semantic_max": 0.7725334167480469,
+   "kg_known_pairs": 0.6058201058201058,
+   "nearest": "Improved CRISPR/Cas9 off-target prediction with DNABERT and epigenetic features"
+  },
+  {
+   "id": "urban_heat-idea-qwen3-4b-0",
+   "topic": "urban_heat",
+   "model": "qwen3-4b",
+   "title": "Integrating dynamic green infrastructure with real-time microclimate sensors in dense urban cores",
+   "group": "known combination",
+   "semantic_max": 0.7610993981361389,
+   "kg_known_pairs": 0.7492877492877493,
+   "nearest": "Evaluating the Urban Heat Mitigation Potential of a Living Wall in Milan: One Year of Microclimate Monitoring"
+  },
+  {
+   "id": "urban_heat-idea-qwen3-4b-1",
+   "topic": "urban_heat",
+   "model": "qwen3-4b",
+   "title": "Integrating AI-Driven Green Roof Optimization with Real-Time Urban Microclimate Data",
+   "group": "known combination",
+   "semantic_max": 0.7515394687652588,
+   "kg_known_pairs": 0.7592592592592593,
+   "nearest": "Modelling the impact of green solutions upon the urban heat island phenomenon by means of satellite data"
+  },
+  {
+   "id": "urban_heat-idea-qwen3-4b-2",
+   "topic": "urban_heat",
+   "model": "qwen3-4b",
+   "title": "Integrating AI-Driven Green Roof Optimization with Local Climate Data",
+   "group": "known combination",
+   "semantic_max": 0.7579528093338013,
+   "kg_known_pairs": 0.717948717948718,
+   "nearest": "Modelling the impact of green solutions upon the urban heat island phenomenon by means of satellite data"
+  },
+  {
+   "id": "urban_heat-idea-qwen3-4b-3",
+   "topic": "urban_heat",
+   "model": "qwen3-4b",
+   "title": "Integrating AI-Driven Green Space Scheduling with Real-Time Urban Microclimate Data",
+   "group": "known combination",
+   "semantic_max": 0.7052633762359619,
+   "kg_known_pairs": 0.7736185383244206,
+   "nearest": "Machine Learning Simulation of Land Cover Impact on Surface Urban Heat Island Surrounding Park Areas"
+  },
+  {
+   "id": "urban_heat-idea-qwen3-4b-4",
+   "topic": "urban_heat",
+   "model": "qwen3-4b",
+   "title": "Integrating Dynamic Green Roofs with Real-Time Weather Data for Adaptive Urban Cooling",
+   "group": "known combination",
+   "semantic_max": 0.712333083152771,
+   "kg_known_pairs": 0.7955665024630542,
+   "nearest": "Modelling the impact of green solutions upon the urban heat island phenomenon by means of satellite data"
+  },
+  {
+   "id": "urban_heat-idea-qwen3-4b-5",
+   "topic": "urban_heat",
+   "model": "qwen3-4b",
+   "title": "Integrating AI-Powered Green Roof Optimization with Real-Time Weather Data",
+   "group": "new combination",
+   "semantic_max": 0.7392888069152832,
+   "kg_known_pairs": 0.6600790513833992,
+   "nearest": "Energy consumption and heat island effect mitigation analysis of different roofs considering superposition coupling"
+  },
+  {
+   "id": "urban_heat-idea-qwen3-4b-6",
+   "topic": "urban_heat",
+   "model": "qwen3-4b",
+   "title": "Integrating Dynamic Green Infrastructure with Real-Time Urban Microclimate Sensors",
+   "group": "known combination",
+   "semantic_max": 0.7169150114059448,
+   "kg_known_pairs": 0.9047619047619048,
+   "nearest": "Explore the application of remote sensing in the dynamic monitoring of urban heat island effect"
+  },
+  {
+   "id": "urban_heat-idea-qwen3-4b-7",
+   "topic": "urban_heat",
+   "model": "qwen3-4b",
+   "title": "Integrating AI-driven green infrastructure design with real-time urban microclimate data",
+   "group": "known combination",
+   "semantic_max": 0.7762056589126587,
+   "kg_known_pairs": 0.7207977207977208,
+   "nearest": "Modelling the impact of green solutions upon the urban heat island phenomenon by means of satellite data"
+  },
+  {
+   "id": "misinformation-idea-qwen3-4b-0",
+   "topic": "misinformation",
+   "model": "qwen3-4b",
+   "title": "Detecting Misinformation Through Temporal Pattern Anomalies in User Retweet Dynamics",
+   "group": "new combination",
+   "semantic_max": 0.7014509439468384,
+   "kg_known_pairs": 0.6410256410256411,
+   "nearest": "Semi-supervised self-training for COVID-19 misinformation detection: analyzing Twitter data and alternative news media on Norwegian Twitter"
+  },
+  {
+   "id": "misinformation-idea-qwen3-4b-1",
+   "topic": "misinformation",
+   "model": "qwen3-4b",
+   "title": "Detecting Misinformation Through Cross-Platform Behavioral Signatures",
+   "group": "new combination",
+   "semantic_max": 0.6550793647766113,
+   "kg_known_pairs": 0.6739130434782609,
+   "nearest": "Misinformation in Social Media"
+  },
+  {
+   "id": "misinformation-idea-qwen3-4b-2",
+   "topic": "misinformation",
+   "model": "qwen3-4b",
+   "title": "Detecting Misinformation in Multimodal Deepfakes via Contextual Consistency Analysis",
+   "group": "known combination",
+   "semantic_max": 0.7046698927879333,
+   "kg_known_pairs": 0.8333333333333334,
+   "nearest": "Detecting Misinformation Using Multimodal AI Models on Social Media Platforms"
+  },
+  {
+   "id": "misinformation-idea-qwen3-4b-3",
+   "topic": "misinformation",
+   "model": "qwen3-4b",
+   "title": "Detecting Misinformation in Multilingual Emotional Manipulation on Social Media",
+   "group": "new combination",
+   "semantic_max": 0.6097725629806519,
+   "kg_known_pairs": 0.6092307692307692,
+   "nearest": "A Framework for Enhancing Social Media Misinformation Detection with Topical-Tactics"
+  },
+  {
+   "id": "misinformation-idea-qwen3-4b-4",
+   "topic": "misinformation",
+   "model": "qwen3-4b",
+   "title": "Detecting Misinformation in Multilingual Memes Through Contextual Semantic Analysis",
+   "group": "new combination",
+   "semantic_max": 0.651890218257904,
+   "kg_known_pairs": 0.6140350877192983,
+   "nearest": "Detecting Misinformation Using Multimodal AI Models on Social Media Platforms"
+  },
+  {
+   "id": "misinformation-idea-qwen3-4b-5",
+   "topic": "misinformation",
+   "model": "qwen3-4b",
+   "title": "Detecting Misinformation Through Cross-Platform Emotional Contagion Patterns",
+   "group": "new combination",
+   "semantic_max": 0.6562492251396179,
+   "kg_known_pairs": 0.6365591397849463,
+   "nearest": "Trends in the diffusion of misinformation on social media"
+  },
+  {
+   "id": "misinformation-idea-qwen3-4b-6",
+   "topic": "misinformation",
+   "model": "qwen3-4b",
+   "title": "Detecting Misinformation Through Temporal Consistency in User-Generated Visual Content",
+   "group": "new combination",
+   "semantic_max": 0.6453515291213989,
+   "kg_known_pairs": 0.5296442687747036,
+   "nearest": "Detecting Misinformation Using Multimodal AI Models on Social Media Platforms"
+  },
+  {
+   "id": "misinformation-idea-qwen3-4b-7",
+   "topic": "misinformation",
+   "model": "qwen3-4b",
+   "title": "Detecting Misinformation Through Temporal Consistency in User-Generated Image Descriptions",
+   "group": "known combination",
+   "semantic_max": 0.6540628671646118,
+   "kg_known_pairs": 0.7777777777777778,
+   "nearest": "Detecting Misinformation Using Multimodal AI Models on Social Media Platforms"
+  }
+ ],
+ "counts": [
+  {
+   "model": "phi-4-mini",
+   "n": 48,
+   "near-duplicate": 24,
+   "known combination": 11,
+   "new combination": 13
+  },
+  {
+   "model": "qwen3-4b",
+   "n": 48,
+   "near-duplicate": 8,
+   "known combination": 16,
+   "new combination": 24
+  }
+ ],
+ "disagreements": [
+  {
+   "id": "calibration-idea-qwen3-4b-4",
+   "topic": "calibration",
+   "model": "qwen3-4b",
+   "title": "Dynamic Uncertainty Weighting for Ensemble Calibration",
+   "group": "known combination",
+   "semantic_max": 0.6000373363494873,
+   "kg_known_pairs": 1.0,
+   "nearest": "Deep Neural Network Confidence Calibration from Stochastic Weight Averaging"
+  }
+ ]
+}

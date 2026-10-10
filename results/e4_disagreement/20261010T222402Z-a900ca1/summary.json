@@ -1,0 +1,200 @@
+{
+ "title": "E4 Similarity is not novelty",
+ "question": "Do the indicators agree with each other, and are the generated ideas new or recombinations of this literature?",
+ "findings": [
+  "Semantic similarity and the share of known concept pairs correlate at ρ = 0.41 over all items, so they do not measure the same thing.",
+  "Of 96 generated ideas in 6 topics: 32 near-duplicates of a prior paper, 27 known combinations, 37 new combinations of this literature.",
+  "1 idea is less similar to any paper than the median idea, yet every one of its concept pairs already appears together in some prior paper: low similarity without new combinations."
+ ],
+ "tables": [
+  {
+   "id": "matrix",
+   "caption": "Spearman correlation between indicators over all items",
+   "columns": [
+    {
+     "key": "a",
+     "label": "",
+     "align": "l"
+    },
+    {
+     "key": "semantic_max",
+     "label": "Semantic similarity (max)",
+     "align": "r"
+    },
+    {
+     "key": "semantic_top10",
+     "label": "Semantic similarity (top 10)",
+     "align": "r"
+    },
+    {
+     "key": "keyword_overlap",
+     "label": "Keyword overlap",
+     "align": "r"
+    },
+    {
+     "key": "concept_overlap",
+     "label": "Concept overlap",
+     "align": "r"
+    },
+    {
+     "key": "citation_overlap",
+     "label": "Citation overlap",
+     "align": "r"
+    },
+    {
+     "key": "kg_known_pairs",
+     "label": "Known concept pairs (graph)",
+     "align": "r"
+    },
+    {
+     "key": "kg_npmi",
+     "label": "Concept-pair association (graph)",
+     "align": "r"
+    },
+    {
+     "key": "new_phrase_share",
+     "label": "New phrases",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "a": "Semantic similarity (max)",
+     "semantic_max": "1.00",
+     "semantic_top10": "0.77",
+     "keyword_overlap": "0.74",
+     "concept_overlap": "0.29",
+     "citation_overlap": "0.36",
+     "kg_known_pairs": "0.41",
+     "kg_npmi": "0.40",
+     "new_phrase_share": "-0.64"
+    },
+    {
+     "a": "Semantic similarity (top 10)",
+     "semantic_max": "0.77",
+     "semantic_top10": "1.00",
+     "keyword_overlap": "0.48",
+     "concept_overlap": "0.04",
+     "citation_overlap": "0.37",
+     "kg_known_pairs": "0.24",
+     "kg_npmi": "0.21",
+     "new_phrase_share": "-0.62"
+    },
+    {
+     "a": "Keyword overlap",
+     "semantic_max": "0.74",
+     "semantic_top10": "0.48",
+     "keyword_overlap": "1.00",
+     "concept_overlap": "0.43",
+     "citation_overlap": "0.11",
+     "kg_known_pairs": "0.46",
+     "kg_npmi": "0.47",
+     "new_phrase_share": "-0.64"
+    },
+    {
+     "a": "Concept overlap",
+     "semantic_max": "0.29",
+     "semantic_top10": "0.04",
+     "keyword_overlap": "0.43",
+     "concept_overlap": "1.00",
+     "citation_overlap": "0.07",
+     "kg_known_pairs": "0.58",
+     "kg_npmi": "0.62",
+     "new_phrase_share": "-0.24"
+    },
+    {
+     "a": "Citation overlap",
+     "semantic_max": "0.36",
+     "semantic_top10": "0.37",
+     "keyword_overlap": "0.11",
+     "concept_overlap": "0.07",
+     "citation_overlap": "1.00",
+     "kg_known_pairs": "0.08",
+     "kg_npmi": "0.16",
+     "new_phrase_share": "-0.14"
+    },
+    {
+     "a": "Known concept pairs (graph)",
+     "semantic_max": "0.41",
+     "semantic_top10": "0.24",
+     "keyword_overlap": "0.46",
+     "concept_overlap": "0.58",
+     "citation_overlap": "0.08",
+     "kg_known_pairs": "1.00",
+     "kg_npmi": "0.94",
+     "new_phrase_share": "-0.32"
+    },
+    {
+     "a": "Concept-pair association (graph)",
+     "semantic_max": "0.40",
+     "semantic_top10": "0.21",
+     "keyword_overlap": "0.47",
+     "concept_overlap": "0.62",
+     "citation_overlap": "0.16",
+     "kg_known_pairs": "0.94",
+     "kg_npmi": "1.00",
+     "new_phrase_share": "-0.31"
+    },
+    {
+     "a": "New phrases",
+     "semantic_max": "-0.64",
+     "semantic_top10": "-0.62",
+     "keyword_overlap": "-0.64",
+     "concept_overlap": "-0.24",
+     "citation_overlap": "-0.14",
+     "kg_known_pairs": "-0.32",
+     "kg_npmi": "-0.31",
+     "new_phrase_share": "1.00"
+    }
+   ]
+  },
+  {
+   "id": "groups",
+   "caption": "Generated ideas by group (thresholds from controls: similarity ≥ 0.805; known concept pairs ≥ 0.71)",
+   "columns": [
+    {
+     "key": "model",
+     "label": "Model",
+     "align": "l"
+    },
+    {
+     "key": "n",
+     "label": "Ideas",
+     "align": "r"
+    },
+    {
+     "key": "near-duplicate",
+     "label": "Near-duplicate",
+     "align": "r"
+    },
+    {
+     "key": "known combination",
+     "label": "Known combination",
+     "align": "r"
+    },
+    {
+     "key": "new combination",
+     "label": "New combination",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "model": "phi-4-mini",
+     "n": 48,
+     "near-duplicate": 24,
+     "known combination": 11,
+     "new combination": 13
+    },
+    {
+     "model": "qwen3-4b",
+     "n": 48,
+     "near-duplicate": 8,
+     "known combination": 16,
+     "new combination": 24
+    }
+   ]
+  }
+ ],
+ "notes": []
+}

@@ -1,5 +1,5 @@
 import type { Interval } from "../lib/api";
-import { KIND_SERIES, KIND_SHORT, num } from "../lib/format";
+import { KIND_SERIES, KIND_SHORT, niceTicks, num } from "../lib/format";
 
 /** Means with 95% intervals on a shared horizontal axis: one row per group. */
 export function IntervalDots({
@@ -13,16 +13,15 @@ export function IntervalDots({
   domain?: [number, number];
   digits?: number;
 }) {
-  const W = 420;
-  const L = 130;
+  const W = 580;
+  const L = 236;
   const R = 16;
   const rowH = 26;
   const H = rows.length * rowH + 28;
   const vals = rows.flatMap((r) => [r.v.lo, r.v.hi, r.v.value]).filter((v): v is number => v !== null);
-  const lo = domain?.[0] ?? Math.min(0, ...vals);
-  const hi = domain?.[1] ?? Math.max(...vals, lo + 1e-6);
+  const axis = niceTicks(domain?.[0] ?? Math.min(0, ...vals), domain?.[1] ?? Math.max(...vals, 1e-6));
+  const { lo, hi, ticks } = axis;
   const x = (v: number) => L + ((v - lo) / (hi - lo || 1)) * (W - L - R);
-  const ticks = Array.from({ length: 5 }, (_, i) => lo + ((hi - lo) * i) / 4);
   return (
     <svg
       className="chart-svg"
@@ -35,7 +34,7 @@ export function IntervalDots({
         <g key={t}>
           <line x1={x(t)} x2={x(t)} y1={4} y2={H - 22} stroke="var(--rule)" />
           <text x={x(t)} y={H - 8} textAnchor="middle" className="tick">
-            {num(t, digits)}
+            {num(t, axis.digits)}
           </text>
         </g>
       ))}
@@ -71,12 +70,12 @@ export function StripPlot({
 }) {
   const W = 360;
   const L = 104;
-  const R = 10;
+  const R = 14;
   const rowH = 18;
   const H = kinds.length * rowH + 22;
   const vals = points.map((p) => p.v).filter((v): v is number => v !== null);
-  const lo = Math.min(...vals, 0);
-  const hi = Math.max(...vals, lo + 1e-6);
+  const axis = niceTicks(Math.min(...vals, 0), Math.max(...vals, 1e-6), 2);
+  const { lo, hi } = axis;
   const x = (v: number) => L + ((v - lo) / (hi - lo || 1)) * (W - L - R);
   const sel = points.find((p) => p.id === selected);
   return (
@@ -119,9 +118,15 @@ export function StripPlot({
           strokeWidth={2}
         />
       )}
-      {[lo, (lo + hi) / 2, hi].map((t) => (
-        <text key={t} x={x(t)} y={H - 4} textAnchor="middle" className="tick">
-          {num(t, 2)}
+      {axis.ticks.map((t, i) => (
+        <text
+          key={t}
+          x={x(t)}
+          y={H - 4}
+          textAnchor={i === 0 ? "start" : i === axis.ticks.length - 1 ? "end" : "middle"}
+          className="tick"
+        >
+          {num(t, axis.digits)}
         </text>
       ))}
     </svg>

@@ -1,0 +1,242 @@
+[
+ {
+  "variant": "bge-small",
+  "indicator": "semantic_max",
+  "rank_agreement": 0.8824603685040039,
+  "auroc_primary": {
+   "value": 0.9552469135802468,
+   "lo": 0.9062307098765432,
+   "hi": 0.988059413580247
+  },
+  "auroc_variant": {
+   "value": 0.9236111111111112,
+   "lo": 0.8514467592592593,
+   "hi": 0.9783950617283951
+  }
+ },
+ {
+  "variant": "bge-small",
+  "indicator": "semantic_top10",
+  "rank_agreement": 0.8701571124665174,
+  "auroc_primary": {
+   "value": 0.6234567901234568,
+   "lo": 0.474903549382716,
+   "hi": 0.7434606481481482
+  },
+  "auroc_variant": {
+   "value": 0.5401234567901234,
+   "lo": 0.38966049382716045,
+   "hi": 0.6559027777777777
+  }
+ },
+ {
+  "variant": "bge-small",
+  "indicator": "keyword_overlap",
+  "rank_agreement": 1.0,
+  "auroc_primary": {
+   "value": 0.9529320987654321,
+   "lo": 0.8861689814814815,
+   "hi": 0.9973186728395061
+  },
+  "auroc_variant": {
+   "value": 0.9529320987654321,
+   "lo": 0.8861689814814815,
+   "hi": 0.9973186728395061
+  }
+ },
+ {
+  "variant": "bge-small",
+  "indicator": "concept_overlap",
+  "rank_agreement": 0.7780566265537103,
+  "auroc_primary": {
+   "value": 0.8445216049382717,
+   "lo": 0.7515046296296297,
+   "hi": 0.9249035493827159
+  },
+  "auroc_variant": {
+   "value": 0.8742283950617284,
+   "lo": 0.784519675925926,
+   "hi": 0.9471450617283951
+  }
+ },
+ {
+  "variant": "bge-small",
+  "indicator": "citation_overlap",
+  "rank_agreement": 0.7778558353534853,
+  "auroc_primary": {
+   "value": 0.5146604938271605,
+   "lo": 0.37191358024691357,
+   "hi": 0.6508680555555555
+  },
+  "auroc_variant": {
+   "value": 0.513888888888889,
+   "lo": 0.38231095679012345,
+   "hi": 0.6420138888888889
+  }
+ },
+ {
+  "variant": "bge-small",
+  "indicator": "kg_known_pairs",
+  "rank_agreement": 1.0,
+  "auroc_primary": {
+   "value": 0.8491512345679012,
+   "lo": 0.7634837962962963,
+   "hi": 0.9263310185185185
+  },
+  "auroc_variant": {
+   "value": 0.8491512345679012,
+   "lo": 0.7634837962962963,
+   "hi": 0.9263310185185185
+  }
+ },
+ {
+  "variant": "bge-small",
+  "indicator": "kg_npmi",
+  "rank_agreement": 1.0,
+  "auroc_primary": {
+   "value": 0.8472222222222223,
+   "lo": 0.7627121913580247,
+   "hi": 0.9298225308641974
+  },
+  "auroc_variant": {
+   "value": 0.8472222222222223,
+   "lo": 0.7627121913580247,
+   "hi": 0.9298225308641974
+  }
+ },
+ {
+  "variant": "bge-small",
+  "indicator": "new_phrase_share",
+  "rank_agreement": 1.0,
+  "auroc_primary": {
+   "value": 0.7993827160493827,
+   "lo": 0.6878665123456791,
+   "hi": 0.8912037037037037
+  },
+  "auroc_variant": {
+   "value": 0.7993827160493827,
+   "lo": 0.6878665123456791,
+   "hi": 0.8912037037037037
+  }
+ },
+ {
+  "variant": "half-corpus",
+  "indicator": "semantic_max",
+  "rank_agreement": 0.9829388441667668,
+  "auroc_primary": {
+   "value": 0.9552469135802468,
+   "lo": 0.9062307098765432,
+   "hi": 0.988059413580247
+  },
+  "auroc_variant": {
+   "value": 0.9621913580246914,
+   "lo": 0.9189814814814814,
+   "hi": 0.9903742283950617
+  }
+ },
+ {
+  "variant": "half-corpus",
+  "indicator": "semantic_top10",
+  "rank_agreement": 0.9931995674636549,
+  "auroc_primary": {
+   "value": 0.6234567901234568,
+   "lo": 0.474903549382716,
+   "hi": 0.7434606481481482
+  },
+  "auroc_variant": {
+   "value": 0.6234567901234568,
+   "lo": 0.48148148148148145,
+   "hi": 0.7426890432098765
+  }
+ },
+ {
+  "variant": "half-corpus",
+  "indicator": "keyword_overlap",
+  "rank_agreement": 0.9770259143407114,
+  "auroc_primary": {
+   "value": 0.9529320987654321,
+   "lo": 0.8861689814814815,
+   "hi": 0.9973186728395061
+  },
+  "auroc_variant": {
+   "value": 0.9571759259259258,
+   "lo": 0.8977430555555556,
+   "hi": 0.9961805555555555
+  }
+ },
+ {
+  "variant": "half-corpus",
+  "indicator": "concept_overlap",
+  "rank_agreement": 0.7597359748091873,
+  "auroc_primary": {
+   "value": 0.8445216049382717,
+   "lo": 0.7515046296296297,
+   "hi": 0.9249035493827159
+  },
+  "auroc_variant": {
+   "value": 0.8433641975308641,
+   "lo": 0.7386091820987655,
+   "hi": 0.9278742283950617
+  }
+ },
+ {
+  "variant": "half-corpus",
+  "indicator": "citation_overlap",
+  "rank_agreement": 0.9116664664183588,
+  "auroc_primary": {
+   "value": 0.5146604938271605,
+   "lo": 0.37191358024691357,
+   "hi": 0.6508680555555555
+  },
+  "auroc_variant": {
+   "value": 0.6226851851851852,
+   "lo": 0.48603395061728394,
+   "hi": 0.7473186728395061
+  }
+ },
+ {
+  "variant": "half-corpus",
+  "indicator": "kg_known_pairs",
+  "rank_agreement": 0.7114633167958234,
+  "auroc_primary": {
+   "value": 0.8491512345679012,
+   "lo": 0.7634837962962963,
+   "hi": 0.9263310185185185
+  },
+  "auroc_variant": {
+   "value": 0.8676697530864198,
+   "lo": 0.7847222222222222,
+   "hi": 0.940239197530864
+  }
+ },
+ {
+  "variant": "half-corpus",
+  "indicator": "kg_npmi",
+  "rank_agreement": 0.7358036906941078,
+  "auroc_primary": {
+   "value": 0.8472222222222223,
+   "lo": 0.7627121913580247,
+   "hi": 0.9298225308641974
+  },
+  "auroc_variant": {
+   "value": 0.8765432098765432,
+   "lo": 0.7881751543209877,
+   "hi": 0.9471643518518519
+  }
+ },
+ {
+  "variant": "half-corpus",
+  "indicator": "new_phrase_share",
+  "rank_agreement": 0.9710167875200393,
+  "auroc_primary": {
+   "value": 0.7993827160493827,
+   "lo": 0.6878665123456791,
+   "hi": 0.8912037037037037
+  },
+  "auroc_variant": {
+   "value": 0.8287037037037037,
+   "lo": 0.7276234567901234,
+   "hi": 0.9153452932098766
+  }
+ }
+]

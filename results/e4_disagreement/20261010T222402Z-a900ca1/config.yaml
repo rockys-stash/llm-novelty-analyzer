@@ -1,0 +1,3 @@
+seed: 0
+near_duplicate_quantile: 0.1
+known_pairs_quantile: 0.5

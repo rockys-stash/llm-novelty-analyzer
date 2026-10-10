@@ -1,0 +1,34 @@
+{
+ "experiment": "e2_validity",
+ "run_id": "20261010T213844Z-a39f542",
+ "commit": "a39f542f6bf9d88ace0998817d7214f36b2ba1de",
+ "dirty": false,
+ "created_at": "2026-10-10T21:39:57+00:00",
+ "runtime_seconds": 72.67,
+ "description": "AUROC of each indicator between control kinds of known provenance; source recovery of the prior-art map",
+ "config_sha256": "a99079ca3c6e92a5d4a885bb5db80f18b1a1ba2ed65667d6ddef63d53a758549",
+ "python": "3.13.16",
+ "machine": "x86_64",
+ "cpus": 4,
+ "packages": {
+  "scikit-learn": "1.9.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "sentence-transformers": "6.1.0"
+ },
+ "inputs_sha256": {
+  "calibration/corpus": "ed374ca5df56789dfca0940cf3558e82a7d06f1b2c8cd5639dc5a17be3253038",
+  "calibration/later": "cfa54eaf4a2fc86106ead2a7085d1bf5f2b06f2de840e968b198ffb50e193071",
+  "battery/corpus": "4658d5ed44708d72ad9ac5baaa0e0e7d82478bb64ef533d436b24622da56850c",
+  "battery/later": "dd3eda9ca8d0e289bfc7fe3b2640ffafb803c3ef46b1a056cc5b17053baa937c",
+  "federated/corpus": "45192390974fdc26d47543744f23626f1c4d9a8aa06f53709391599f48e2cf50",
+  "federated/later": "30d6f96376f5cedf59dac48c5632df0072d2f6ad66fa9b6cc05b05909d9795cf",
+  "crispr/corpus": "af213fc09d1beeb702c53fbb1922f12063d33531b3bf8e9325ce91f42cc7c198",
+  "crispr/later": "c04072ec4d1a3af1272d94d5d3dfb76a1f8cd7ffaae0481d928764bdfce16704",
+  "urban_heat/corpus": "dec351bf96add785c342f1748fc722da90458780c33ede7e2dd1c94dd55abcf2",
+  "urban_heat/later": "55547e6bbe407c889e2aa7ba169b6d643d33b95e6cc14100fc54a3547ce2307a",
+  "misinformation/corpus": "e430eee5b69a275edd7b470c01c5d20d2d7a2d483cad6678fe12fbef041453a4",
+  "misinformation/later": "20d00255ed258747fcc73110e99b4dd287d6cd2aed0fe0a3f8469a9218619aae",
+  "items": "241166a2d89adf3714c89a5910e5840aba4ded7709ba7a4133d837cef1f4ef6d"
+ }
+}

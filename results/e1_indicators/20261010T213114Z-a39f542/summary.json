@@ -1,0 +1,214 @@
+{
+ "title": "E1 Novelty indicators",
+ "question": "How close is each item to its topic's existing literature, by each indicator?",
+ "findings": [
+  "204 items in 6 topics. Highest similarity to any prior paper: paraphrased papers 0.882, generated ideas 0.748, papers published after the corpus 0.744.",
+  "Generated ideas: 71% of their concept pairs already co-occur in some prior paper (paraphrases 80%, later papers 66%)."
+ ],
+ "tables": [
+  {
+   "id": "corpus",
+   "caption": "Prior-art corpus per topic (Crossref journal articles with abstract and references)",
+   "columns": [
+    {
+     "key": "label",
+     "label": "Topic",
+     "align": "l"
+    },
+    {
+     "key": "papers",
+     "label": "Papers",
+     "align": "r"
+    },
+    {
+     "key": "years",
+     "label": "Years",
+     "align": "l"
+    },
+    {
+     "key": "concepts",
+     "label": "Concepts",
+     "align": "r"
+    },
+    {
+     "key": "edges",
+     "label": "Concept pairs seen together",
+     "align": "r"
+    },
+    {
+     "key": "refs",
+     "label": "Median references",
+     "align": "r"
+    },
+    {
+     "key": "later",
+     "label": "Later papers",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "label": "Uncertainty calibration of neural networks",
+     "papers": 988,
+     "years": "2015–2025",
+     "concepts": 1966,
+     "edges": 118384,
+     "refs": "28",
+     "later": 40
+    },
+    {
+     "label": "Battery state-of-health estimation",
+     "papers": 981,
+     "years": "2015–2025",
+     "concepts": 2650,
+     "edges": 334385,
+     "refs": "33",
+     "later": 40
+    },
+    {
+     "label": "Privacy in federated learning",
+     "papers": 988,
+     "years": "2015–2025",
+     "concepts": 2865,
+     "edges": 379315,
+     "refs": "28",
+     "later": 40
+    },
+    {
+     "label": "CRISPR off-target prediction",
+     "papers": 967,
+     "years": "2015–2025",
+     "concepts": 3625,
+     "edges": 586186,
+     "refs": "49",
+     "later": 40
+    },
+    {
+     "label": "Urban heat island mitigation",
+     "papers": 993,
+     "years": "2015–2025",
+     "concepts": 3708,
+     "edges": 692634,
+     "refs": "41",
+     "later": 40
+    },
+    {
+     "label": "Misinformation detection on social media",
+     "papers": 980,
+     "years": "2015–2025",
+     "concepts": 3168,
+     "edges": 358503,
+     "refs": "30",
+     "later": 40
+    }
+   ]
+  },
+  {
+   "id": "by_kind",
+   "caption": "Mean indicator by item kind, 95% bootstrap interval over items",
+   "columns": [
+    {
+     "key": "kind",
+     "label": "Item kind",
+     "align": "l"
+    },
+    {
+     "key": "n",
+     "label": "Items",
+     "align": "r"
+    },
+    {
+     "key": "semantic_max",
+     "label": "Semantic similarity (max)",
+     "align": "r"
+    },
+    {
+     "key": "semantic_top10",
+     "label": "Semantic similarity (top 10)",
+     "align": "r"
+    },
+    {
+     "key": "keyword_overlap",
+     "label": "Keyword overlap",
+     "align": "r"
+    },
+    {
+     "key": "concept_overlap",
+     "label": "Concept overlap",
+     "align": "r"
+    },
+    {
+     "key": "citation_overlap",
+     "label": "Citation overlap",
+     "align": "r"
+    },
+    {
+     "key": "kg_known_pairs",
+     "label": "Known concept pairs (graph)",
+     "align": "r"
+    },
+    {
+     "key": "kg_npmi",
+     "label": "Concept-pair association (graph)",
+     "align": "r"
+    },
+    {
+     "key": "new_phrase_share",
+     "label": "New phrases",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "kind": "Paraphrased prior paper",
+     "n": 36,
+     "semantic_max": "0.882 [0.865, 0.897]",
+     "semantic_top10": "0.738 [0.711, 0.761]",
+     "keyword_overlap": "0.311 [0.282, 0.339]",
+     "concept_overlap": "0.826 [0.791, 0.856]",
+     "citation_overlap": "0.017 [0.013, 0.021]",
+     "kg_known_pairs": "0.802 [0.772, 0.830]",
+     "kg_npmi": "-0.048 [-0.089, -0.004]",
+     "new_phrase_share": "0.375 [0.322, 0.430]"
+    },
+    {
+     "kind": "Recombined two prior papers",
+     "n": 36,
+     "semantic_max": "0.779 [0.752, 0.803]",
+     "semantic_top10": "0.701 [0.671, 0.729]",
+     "keyword_overlap": "0.194 [0.175, 0.213]",
+     "concept_overlap": "0.744 [0.696, 0.788]",
+     "citation_overlap": "0.016 [0.012, 0.021]",
+     "kg_known_pairs": "0.702 [0.666, 0.735]",
+     "kg_npmi": "-0.193 [-0.232, -0.155]",
+     "new_phrase_share": "0.462 [0.412, 0.513]"
+    },
+    {
+     "kind": "LLM-generated idea",
+     "n": 96,
+     "semantic_max": "0.748 [0.729, 0.767]",
+     "semantic_top10": "0.707 [0.687, 0.727]",
+     "keyword_overlap": "0.142 [0.136, 0.148]",
+     "concept_overlap": "0.659 [0.634, 0.684]",
+     "citation_overlap": "0.027 [0.022, 0.034]",
+     "kg_known_pairs": "0.706 [0.683, 0.729]",
+     "kg_npmi": "-0.185 [-0.211, -0.157]",
+     "new_phrase_share": "0.524 [0.493, 0.556]"
+    },
+    {
+     "kind": "Paper published after the corpus",
+     "n": 36,
+     "semantic_max": "0.744 [0.717, 0.768]",
+     "semantic_top10": "0.702 [0.672, 0.728]",
+     "keyword_overlap": "0.145 [0.134, 0.156]",
+     "concept_overlap": "0.668 [0.629, 0.703]",
+     "citation_overlap": "0.015 [0.012, 0.019]",
+     "kg_known_pairs": "0.662 [0.631, 0.693]",
+     "kg_npmi": "-0.228 [-0.267, -0.187]",
+     "new_phrase_share": "0.573 [0.521, 0.624]"
+    }
+   ]
+  }
+ ],
+ "notes": []
+}

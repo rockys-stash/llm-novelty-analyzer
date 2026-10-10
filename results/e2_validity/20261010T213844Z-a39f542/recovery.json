@@ -1,0 +1,16 @@
+{
+ "paraphrase": {
+  "n": 36,
+  "top1_all": 0.8888888888888888,
+  "top10_all": 0.9444444444444444,
+  "top10_any": 0.9444444444444444,
+  "median_rank": 1.0
+ },
+ "recombination": {
+  "n": 36,
+  "top1_all": 0.0,
+  "top10_all": 0.6111111111111112,
+  "top10_any": 1.0,
+  "median_rank": 2.0
+ }
+}

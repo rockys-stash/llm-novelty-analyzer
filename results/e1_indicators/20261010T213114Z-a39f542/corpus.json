@@ -1,0 +1,80 @@
+[
+ {
+  "topic": "calibration",
+  "label": "Uncertainty calibration of neural networks",
+  "papers": 988,
+  "years": [
+   2015,
+   2025
+  ],
+  "concepts": 1966,
+  "edges": 118384,
+  "median_references": 28.0,
+  "later": 40
+ },
+ {
+  "topic": "battery",
+  "label": "Battery state-of-health estimation",
+  "papers": 981,
+  "years": [
+   2015,
+   2025
+  ],
+  "concepts": 2650,
+  "edges": 334385,
+  "median_references": 33.0,
+  "later": 40
+ },
+ {
+  "topic": "federated",
+  "label": "Privacy in federated learning",
+  "papers": 988,
+  "years": [
+   2015,
+   2025
+  ],
+  "concepts": 2865,
+  "edges": 379315,
+  "median_references": 28.0,
+  "later": 40
+ },
+ {
+  "topic": "crispr",
+  "label": "CRISPR off-target prediction",
+  "papers": 967,
+  "years": [
+   2015,
+   2025
+  ],
+  "concepts": 3625,
+  "edges": 586186,
+  "median_references": 49.0,
+  "later": 40
+ },
+ {
+  "topic": "urban_heat",
+  "label": "Urban heat island mitigation",
+  "papers": 993,
+  "years": [
+   2015,
+   2025
+  ],
+  "concepts": 3708,
+  "edges": 692634,
+  "median_references": 41.0,
+  "later": 40
+ },
+ {
+  "topic": "misinformation",
+  "label": "Misinformation detection on social media",
+  "papers": 980,
+  "years": [
+   2015,
+   2025
+  ],
+  "concepts": 3168,
+  "edges": 358503,
+  "median_references": 30.5,
+  "later": 40
+ }
+]

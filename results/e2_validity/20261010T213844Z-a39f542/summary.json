@@ -1,0 +1,174 @@
+{
+ "title": "E2 Validity against known provenance",
+ "question": "Do the indicators place restated prior papers below papers the corpus has never seen?",
+ "findings": [
+  "Paraphrased prior papers vs papers published after the corpus: best indicator Semantic similarity (max) (AUROC 0.96 [0.91, 0.99]). Indicators whose interval includes chance: Semantic similarity (top 10), Citation overlap.",
+  "Paraphrased prior paper: the source paper is the nearest neighbour for 89% of items; every source is in the top 10 for 94%.",
+  "Recombined two prior papers: the source paper is the nearest neighbour for 0% of items; every source is in the top 10 for 61%."
+ ],
+ "tables": [
+  {
+   "id": "auroc",
+   "caption": "AUROC with 95% bootstrap interval (stratified by kind); higher = indicator ranks the second kind as more novel",
+   "columns": [
+    {
+     "key": "cmp",
+     "label": "Comparison",
+     "align": "l"
+    },
+    {
+     "key": "semantic_max",
+     "label": "Semantic similarity (max)",
+     "align": "r"
+    },
+    {
+     "key": "semantic_top10",
+     "label": "Semantic similarity (top 10)",
+     "align": "r"
+    },
+    {
+     "key": "keyword_overlap",
+     "label": "Keyword overlap",
+     "align": "r"
+    },
+    {
+     "key": "concept_overlap",
+     "label": "Concept overlap",
+     "align": "r"
+    },
+    {
+     "key": "citation_overlap",
+     "label": "Citation overlap",
+     "align": "r"
+    },
+    {
+     "key": "kg_known_pairs",
+     "label": "Known concept pairs (graph)",
+     "align": "r"
+    },
+    {
+     "key": "kg_npmi",
+     "label": "Concept-pair association (graph)",
+     "align": "r"
+    },
+    {
+     "key": "new_phrase_share",
+     "label": "New phrases",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "cmp": "Paraphrased prior paper → Paper published after the corpus",
+     "semantic_max": "0.96 [0.91, 0.99]",
+     "semantic_top10": "0.62 [0.48, 0.75]",
+     "keyword_overlap": "0.95 [0.89, 1.00]",
+     "concept_overlap": "0.84 [0.75, 0.92]",
+     "citation_overlap": "0.51 [0.38, 0.65]",
+     "kg_known_pairs": "0.85 [0.76, 0.92]",
+     "kg_npmi": "0.85 [0.76, 0.93]",
+     "new_phrase_share": "0.80 [0.69, 0.89]"
+    },
+    {
+     "cmp": "Recombined two prior papers → Paper published after the corpus",
+     "semantic_max": "0.65 [0.52, 0.77]",
+     "semantic_top10": "0.51 [0.37, 0.64]",
+     "keyword_overlap": "0.77 [0.67, 0.86]",
+     "concept_overlap": "0.69 [0.57, 0.81]",
+     "citation_overlap": "0.48 [0.34, 0.61]",
+     "kg_known_pairs": "0.62 [0.48, 0.75]",
+     "kg_npmi": "0.58 [0.45, 0.71]",
+     "new_phrase_share": "0.69 [0.56, 0.80]"
+    },
+    {
+     "cmp": "Paraphrased prior paper → Recombined two prior papers",
+     "semantic_max": "0.88 [0.79, 0.95]",
+     "semantic_top10": "0.61 [0.47, 0.74]",
+     "keyword_overlap": "0.87 [0.78, 0.95]",
+     "concept_overlap": "0.67 [0.54, 0.78]",
+     "citation_overlap": "0.55 [0.42, 0.68]",
+     "kg_known_pairs": "0.75 [0.63, 0.85]",
+     "kg_npmi": "0.78 [0.67, 0.88]",
+     "new_phrase_share": "0.65 [0.52, 0.77]"
+    },
+    {
+     "cmp": "Paraphrased prior paper → LLM-generated idea",
+     "semantic_max": "0.91 [0.85, 0.95]",
+     "semantic_top10": "0.59 [0.49, 0.69]",
+     "keyword_overlap": "0.96 [0.90, 1.00]",
+     "concept_overlap": "0.84 [0.77, 0.90]",
+     "citation_overlap": "0.49 [0.40, 0.59]",
+     "kg_known_pairs": "0.73 [0.65, 0.82]",
+     "kg_npmi": "0.77 [0.68, 0.84]",
+     "new_phrase_share": "0.74 [0.64, 0.84]"
+    },
+    {
+     "cmp": "LLM-generated idea → Paper published after the corpus",
+     "semantic_max": "0.53 [0.43, 0.63]",
+     "semantic_top10": "0.52 [0.42, 0.62]",
+     "keyword_overlap": "0.47 [0.35, 0.58]",
+     "concept_overlap": "0.47 [0.37, 0.58]",
+     "citation_overlap": "0.51 [0.41, 0.62]",
+     "kg_known_pairs": "0.62 [0.51, 0.73]",
+     "kg_npmi": "0.59 [0.48, 0.70]",
+     "new_phrase_share": "0.58 [0.46, 0.69]"
+    }
+   ]
+  },
+  {
+   "id": "recovery",
+   "caption": "Does the prior-art map find the papers a control was written from? (embedding nearest neighbours)",
+   "columns": [
+    {
+     "key": "kind",
+     "label": "Control",
+     "align": "l"
+    },
+    {
+     "key": "n",
+     "label": "Items",
+     "align": "r"
+    },
+    {
+     "key": "t1",
+     "label": "Source ranked 1st",
+     "align": "r"
+    },
+    {
+     "key": "t10",
+     "label": "All sources in top 10",
+     "align": "r"
+    },
+    {
+     "key": "any",
+     "label": "Any source in top 10",
+     "align": "r"
+    },
+    {
+     "key": "med",
+     "label": "Median source rank",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "kind": "Paraphrased prior paper",
+     "n": 36,
+     "t1": "89%",
+     "t10": "94%",
+     "any": "94%",
+     "med": "1"
+    },
+    {
+     "kind": "Recombined two prior papers",
+     "n": 36,
+     "t1": "0%",
+     "t10": "61%",
+     "any": "100%",
+     "med": "2"
+    }
+   ]
+  }
+ ],
+ "notes": []
+}

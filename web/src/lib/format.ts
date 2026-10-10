@@ -94,3 +94,15 @@ export function cell(v: unknown): string {
   }
   return String(v);
 }
+
+/** Round axis ticks (steps of 1, 2, 2.5 or 5 × 10^k) covering [lo, hi]; returns the ticks and the widened domain. */
+export function niceTicks(lo: number, hi: number, count = 4): { ticks: number[]; lo: number; hi: number; digits: number } {
+  const raw = (hi - lo) / count || 1;
+  const mag = 10 ** Math.floor(Math.log10(raw));
+  const step = ([1, 2, 2.5, 5, 10].find((m) => m * mag >= raw) ?? 10) * mag;
+  const a = Math.floor(lo / step + 1e-9) * step;
+  const b = Math.ceil(hi / step - 1e-9) * step;
+  const ticks = Array.from({ length: Math.round((b - a) / step) + 1 }, (_, i) => a + i * step);
+  const digits = Math.max(0, -Math.floor(Math.log10(step) + 1e-9) + (Number.isInteger(step / mag) ? 0 : 1));
+  return { ticks, lo: a, hi: b, digits };
+}

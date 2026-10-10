@@ -1,0 +1,146 @@
+{
+ "title": "E3 Indicators against judgments of novelty",
+ "question": "Do the computational indicators correlate with judgments of novelty?",
+ "findings": [
+  "Model-judge pilot over 204 items: strongest indicator Semantic similarity (max) (ρ = 0.33 [0.20, 0.44]).",
+  "Agreement between the two model judges on novelty: Spearman 0.71, quadratic-weighted κ 0.08.",
+  "Human study pending: 0 items scored by 0 annotators."
+ ],
+ "tables": [
+  {
+   "id": "corr_model",
+   "caption": "Model judges (pilot): Spearman ρ of each indicator (higher = more novel) with mean novelty score, 95% bootstrap interval",
+   "columns": [
+    {
+     "key": "indicator",
+     "label": "Indicator",
+     "align": "l"
+    },
+    {
+     "key": "all",
+     "label": "All items",
+     "align": "r"
+    },
+    {
+     "key": "idea",
+     "label": "Generated ideas only",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "indicator": "Semantic similarity (max)",
+     "all": "0.33 [0.20, 0.44]",
+     "idea": "0.35 [0.18, 0.50]"
+    },
+    {
+     "indicator": "Semantic similarity (top 10)",
+     "all": "0.12 [-0.01, 0.24]",
+     "idea": "0.28 [0.11, 0.43]"
+    },
+    {
+     "indicator": "Keyword overlap",
+     "all": "0.28 [0.14, 0.41]",
+     "idea": "0.24 [0.05, 0.41]"
+    },
+    {
+     "indicator": "Concept overlap",
+     "all": "0.20 [0.05, 0.34]",
+     "idea": "0.19 [0.01, 0.38]"
+    },
+    {
+     "indicator": "Citation overlap",
+     "all": "0.09 [-0.05, 0.23]",
+     "idea": "0.13 [-0.06, 0.31]"
+    },
+    {
+     "indicator": "Known concept pairs (graph)",
+     "all": "0.10 [-0.05, 0.24]",
+     "idea": "0.21 [0.02, 0.39]"
+    },
+    {
+     "indicator": "Concept-pair association (graph)",
+     "all": "0.14 [-0.00, 0.28]",
+     "idea": "0.24 [0.06, 0.41]"
+    },
+    {
+     "indicator": "New phrases",
+     "all": "0.27 [0.14, 0.40]",
+     "idea": "0.46 [0.29, 0.61]"
+    }
+   ]
+  },
+  {
+   "id": "judges",
+   "caption": "Model judges: mean novelty (1–5) by item kind; AUROC paraphrase → later; own-model preference",
+   "columns": [
+    {
+     "key": "judge",
+     "label": "Judge",
+     "align": "l"
+    },
+    {
+     "key": "paraphrase",
+     "label": "Paraphrased prior paper",
+     "align": "r"
+    },
+    {
+     "key": "recombination",
+     "label": "Recombined two prior papers",
+     "align": "r"
+    },
+    {
+     "key": "idea",
+     "label": "LLM-generated idea",
+     "align": "r"
+    },
+    {
+     "key": "later",
+     "label": "Paper published after the corpus",
+     "align": "r"
+    },
+    {
+     "key": "auc",
+     "label": "AUROC paraphrase → later",
+     "align": "r"
+    },
+    {
+     "key": "own",
+     "label": "Own ideas",
+     "align": "r"
+    },
+    {
+     "key": "other",
+     "label": "Other model's ideas",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "judge": "phi-4-mini",
+     "paraphrase": "3.72",
+     "recombination": "3.82",
+     "idea": "3.93",
+     "later": "3.83",
+     "auc": "0.68",
+     "own": "3.88",
+     "other": "3.99"
+    },
+    {
+     "judge": "qwen3-4b",
+     "paraphrase": "3.55",
+     "recombination": "3.86",
+     "idea": "4.20",
+     "later": "3.85",
+     "auc": "0.64",
+     "own": "4.49",
+     "other": "3.92"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Human study: pending. 0 annotation records from 0 annotators on 0 items (analysis needs at least 20 items).",
+  "Model judges are language models answering the human rubric. They are a pilot that exercises the analysis; they are not human judgments and do not answer the research question."
+ ]
+}

@@ -1,0 +1,535 @@
+{
+ "judges": [
+  "phi-4-mini",
+  "qwen3-4b"
+ ],
+ "items": 204,
+ "correlations": [
+  {
+   "subset": "all",
+   "indicator": "semantic_max",
+   "n": 204,
+   "rho": {
+    "value": 0.3252727385812079,
+    "lo": 0.19967481003127213,
+    "hi": 0.4393402246331052
+   }
+  },
+  {
+   "subset": "all",
+   "indicator": "semantic_top10",
+   "n": 204,
+   "rho": {
+    "value": 0.11974488800697237,
+    "lo": -0.01363081691168867,
+    "hi": 0.2414615870717861
+   }
+  },
+  {
+   "subset": "all",
+   "indicator": "keyword_overlap",
+   "n": 204,
+   "rho": {
+    "value": 0.28202375409900887,
+    "lo": 0.1415792044349033,
+    "hi": 0.41441557369821674
+   }
+  },
+  {
+   "subset": "all",
+   "indicator": "concept_overlap",
+   "n": 204,
+   "rho": {
+    "value": 0.20213169618749835,
+    "lo": 0.05118013930497228,
+    "hi": 0.3408218499082497
+   }
+  },
+  {
+   "subset": "all",
+   "indicator": "citation_overlap",
+   "n": 204,
+   "rho": {
+    "value": 0.08832659084557078,
+    "lo": -0.0532552714374576,
+    "hi": 0.23071251435677265
+   }
+  },
+  {
+   "subset": "all",
+   "indicator": "kg_known_pairs",
+   "n": 204,
+   "rho": {
+    "value": 0.10339367164752242,
+    "lo": -0.05189911048527208,
+    "hi": 0.2399131856672577
+   }
+  },
+  {
+   "subset": "all",
+   "indicator": "kg_npmi",
+   "n": 204,
+   "rho": {
+    "value": 0.1412466393576117,
+    "lo": -0.002187863141805863,
+    "hi": 0.27568702840258685
+   }
+  },
+  {
+   "subset": "all",
+   "indicator": "new_phrase_share",
+   "n": 204,
+   "rho": {
+    "value": 0.2724128500682068,
+    "lo": 0.13955952673735583,
+    "hi": 0.40447987416923437
+   }
+  },
+  {
+   "subset": "idea",
+   "indicator": "semantic_max",
+   "n": 96,
+   "rho": {
+    "value": 0.3496225557768681,
+    "lo": 0.17732360978251904,
+    "hi": 0.4970562324954348
+   }
+  },
+  {
+   "subset": "idea",
+   "indicator": "semantic_top10",
+   "n": 96,
+   "rho": {
+    "value": 0.27576150137300964,
+    "lo": 0.10878783722870941,
+    "hi": 0.4345888986205705
+   }
+  },
+  {
+   "subset": "idea",
+   "indicator": "keyword_overlap",
+   "n": 96,
+   "rho": {
+    "value": 0.2371717916092025,
+    "lo": 0.05046196708656776,
+    "hi": 0.41224593937142257
+   }
+  },
+  {
+   "subset": "idea",
+   "indicator": "concept_overlap",
+   "n": 96,
+   "rho": {
+    "value": 0.1901268053443554,
+    "lo": 0.005975089244570529,
+    "hi": 0.3816127170987101
+   }
+  },
+  {
+   "subset": "idea",
+   "indicator": "citation_overlap",
+   "n": 96,
+   "rho": {
+    "value": 0.13167479432474816,
+    "lo": -0.05842922219897897,
+    "hi": 0.30785939460667616
+   }
+  },
+  {
+   "subset": "idea",
+   "indicator": "kg_known_pairs",
+   "n": 96,
+   "rho": {
+    "value": 0.20505455095676045,
+    "lo": 0.01710150102759503,
+    "hi": 0.38923853518863144
+   }
+  },
+  {
+   "subset": "idea",
+   "indicator": "kg_npmi",
+   "n": 96,
+   "rho": {
+    "value": 0.24123196712415357,
+    "lo": 0.05904024935534416,
+    "hi": 0.4077375219025495
+   }
+  },
+  {
+   "subset": "idea",
+   "indicator": "new_phrase_share",
+   "n": 96,
+   "rho": {
+    "value": 0.4638331942189298,
+    "lo": 0.29447506515641186,
+    "hi": 0.6114276160615256
+   }
+  }
+ ],
+ "per_judge": {
+  "phi-4-mini": {
+   "novelty_by_kind": {
+    "paraphrase": 3.7194305555555562,
+    "recombination": 3.820116666666667,
+    "idea": 3.9341322916666663,
+    "later": 3.830819444444444
+   },
+   "auroc_paraphrase_later": 0.6813271604938271,
+   "own_ideas": 3.8824916666666667,
+   "other_ideas": 3.985772916666667,
+   "relevance": 4.783748529411765,
+   "meaningfulness": 4.89249019607843,
+   "correlations": [
+    {
+     "subset": "all",
+     "indicator": "semantic_max",
+     "n": 204,
+     "rho": {
+      "value": 0.33740050575932795,
+      "lo": 0.21185609725058352,
+      "hi": 0.44932409170671456
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "semantic_top10",
+     "n": 204,
+     "rho": {
+      "value": 0.10484018019613513,
+      "lo": -0.02222539330246424,
+      "hi": 0.22229908164619563
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "keyword_overlap",
+     "n": 204,
+     "rho": {
+      "value": 0.305529080930344,
+      "lo": 0.17487868876580512,
+      "hi": 0.4356408064933036
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "concept_overlap",
+     "n": 204,
+     "rho": {
+      "value": 0.21953962734770374,
+      "lo": 0.0771717109780485,
+      "hi": 0.3532985634689242
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "citation_overlap",
+     "n": 204,
+     "rho": {
+      "value": 0.06415125810503504,
+      "lo": -0.08214905831800039,
+      "hi": 0.20979813341953465
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "kg_known_pairs",
+     "n": 204,
+     "rho": {
+      "value": 0.13580571943316003,
+      "lo": -0.014691875957544604,
+      "hi": 0.2702221249958196
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "kg_npmi",
+     "n": 204,
+     "rho": {
+      "value": 0.16051808388748623,
+      "lo": 0.01985192527471099,
+      "hi": 0.29262923131789015
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "new_phrase_share",
+     "n": 204,
+     "rho": {
+      "value": 0.25661374740036474,
+      "lo": 0.12403053382441907,
+      "hi": 0.38991804069694885
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "semantic_max",
+     "n": 96,
+     "rho": {
+      "value": 0.3311629295330392,
+      "lo": 0.1595195660897518,
+      "hi": 0.48998765511649733
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "semantic_top10",
+     "n": 96,
+     "rho": {
+      "value": 0.2640771036203842,
+      "lo": 0.08569699323728658,
+      "hi": 0.42968918748553236
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "keyword_overlap",
+     "n": 96,
+     "rho": {
+      "value": 0.23799413986256235,
+      "lo": 0.04904150503132019,
+      "hi": 0.4051129860285096
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "concept_overlap",
+     "n": 96,
+     "rho": {
+      "value": 0.1910948651680517,
+      "lo": 0.01472759948337464,
+      "hi": 0.3732577616808115
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "citation_overlap",
+     "n": 96,
+     "rho": {
+      "value": 0.13109239139013193,
+      "lo": -0.06049853776464234,
+      "hi": 0.3081615795862113
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "kg_known_pairs",
+     "n": 96,
+     "rho": {
+      "value": 0.2574636864584559,
+      "lo": 0.08035197707658927,
+      "hi": 0.4246764515504451
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "kg_npmi",
+     "n": 96,
+     "rho": {
+      "value": 0.2807756480948516,
+      "lo": 0.11403171435360232,
+      "hi": 0.43779686375789695
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "new_phrase_share",
+     "n": 96,
+     "rho": {
+      "value": 0.42070651994256963,
+      "lo": 0.2376411326054772,
+      "hi": 0.579629771387927
+     }
+    }
+   ]
+  },
+  "qwen3-4b": {
+   "novelty_by_kind": {
+    "paraphrase": 3.5515444444444446,
+    "recombination": 3.857480555555556,
+    "idea": 4.20349375,
+    "later": 3.853202777777778
+   },
+   "auroc_paraphrase_later": 0.6419753086419753,
+   "own_ideas": 4.486070833333333,
+   "other_ideas": 3.920916666666667,
+   "relevance": 4.5500936274509804,
+   "meaningfulness": 4.847828921568627,
+   "correlations": [
+    {
+     "subset": "all",
+     "indicator": "semantic_max",
+     "n": 204,
+     "rho": {
+      "value": 0.28656821516699144,
+      "lo": 0.1525850060819487,
+      "hi": 0.4098276775222018
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "semantic_top10",
+     "n": 204,
+     "rho": {
+      "value": 0.10037544798285587,
+      "lo": -0.03717049217261972,
+      "hi": 0.22237712995931588
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "keyword_overlap",
+     "n": 204,
+     "rho": {
+      "value": 0.2549208055457765,
+      "lo": 0.10837401442122889,
+      "hi": 0.3953132279820694
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "concept_overlap",
+     "n": 204,
+     "rho": {
+      "value": 0.2029547382582155,
+      "lo": 0.06524243936836119,
+      "hi": 0.338828641134439
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "citation_overlap",
+     "n": 204,
+     "rho": {
+      "value": 0.11671238580196423,
+      "lo": -0.03759552577376692,
+      "hi": 0.25719836954614556
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "kg_known_pairs",
+     "n": 204,
+     "rho": {
+      "value": 0.09227382136992039,
+      "lo": -0.0483996078461098,
+      "hi": 0.2341458769013989
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "kg_npmi",
+     "n": 204,
+     "rho": {
+      "value": 0.1623405225002903,
+      "lo": 0.027395452104851302,
+      "hi": 0.2961322254430801
+     }
+    },
+    {
+     "subset": "all",
+     "indicator": "new_phrase_share",
+     "n": 204,
+     "rho": {
+      "value": 0.2775836032194966,
+      "lo": 0.14278577874359677,
+      "hi": 0.3999849502469223
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "semantic_max",
+     "n": 96,
+     "rho": {
+      "value": 0.3507668995536683,
+      "lo": 0.19281418088173158,
+      "hi": 0.5028375403643339
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "semantic_top10",
+     "n": 96,
+     "rho": {
+      "value": 0.31092145057045434,
+      "lo": 0.1432507168327924,
+      "hi": 0.4685140807642622
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "keyword_overlap",
+     "n": 96,
+     "rho": {
+      "value": 0.21931841174345398,
+      "lo": 0.04466757217159175,
+      "hi": 0.37604969492525014
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "concept_overlap",
+     "n": 96,
+     "rho": {
+      "value": 0.14963507701291667,
+      "lo": -0.038718470436725265,
+      "hi": 0.3456314756587008
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "citation_overlap",
+     "n": 96,
+     "rho": {
+      "value": 0.1996504065873544,
+      "lo": -0.000804866237813002,
+      "hi": 0.3798701662673371
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "kg_known_pairs",
+     "n": 96,
+     "rho": {
+      "value": 0.0886022757766143,
+      "lo": -0.1207988977017314,
+      "hi": 0.2825695373770767
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "kg_npmi",
+     "n": 96,
+     "rho": {
+      "value": 0.18071050920324702,
+      "lo": -0.015763034627422623,
+      "hi": 0.36377253806003507
+     }
+    },
+    {
+     "subset": "idea",
+     "indicator": "new_phrase_share",
+     "n": 96,
+     "rho": {
+      "value": 0.5091356027998912,
+      "lo": 0.34962888956656213,
+      "hi": 0.6292178885086269
+     }
+    }
+   ]
+  }
+ },
+ "agreement": {
+  "novelty": {
+   "spearman": 0.7060604873778296,
+   "weighted_kappa": 0.07627551020408152
+  },
+  "relevance": {
+   "spearman": 0.5677232406838693,
+   "weighted_kappa": 0.5521657144465397
+  },
+  "meaningfulness": {
+   "spearman": 0.30391483551611115,
+   "weighted_kappa": 0.0
+  }
+ }
+}

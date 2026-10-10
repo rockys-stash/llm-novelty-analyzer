@@ -1,0 +1,156 @@
+{
+ "title": "E5 Robustness of the indicators",
+ "question": "Would another embedding model or a smaller corpus change the indicators or their validity?",
+ "findings": [
+  "bge-small: rank agreement with the primary indicators ranges from 0.78 (Citation overlap) to 1.00.",
+  "half-corpus: rank agreement with the primary indicators ranges from 0.71 (Known concept pairs (graph)) to 0.99."
+ ],
+ "tables": [
+  {
+   "id": "variants",
+   "caption": "Rank agreement with the primary indicator over all items, and paraphrase → later AUROC (95% CI)",
+   "columns": [
+    {
+     "key": "variant",
+     "label": "Variant",
+     "align": "l"
+    },
+    {
+     "key": "indicator",
+     "label": "Indicator",
+     "align": "l"
+    },
+    {
+     "key": "rho",
+     "label": "Spearman with primary",
+     "align": "r"
+    },
+    {
+     "key": "p",
+     "label": "AUROC primary",
+     "align": "r"
+    },
+    {
+     "key": "v",
+     "label": "AUROC variant",
+     "align": "r"
+    }
+   ],
+   "rows": [
+    {
+     "variant": "bge-small",
+     "indicator": "Semantic similarity (max)",
+     "rho": "0.88",
+     "p": "0.96 [0.91, 0.99]",
+     "v": "0.92 [0.85, 0.98]"
+    },
+    {
+     "variant": "bge-small",
+     "indicator": "Semantic similarity (top 10)",
+     "rho": "0.87",
+     "p": "0.62 [0.47, 0.74]",
+     "v": "0.54 [0.39, 0.66]"
+    },
+    {
+     "variant": "bge-small",
+     "indicator": "Keyword overlap",
+     "rho": "1.00",
+     "p": "0.95 [0.89, 1.00]",
+     "v": "0.95 [0.89, 1.00]"
+    },
+    {
+     "variant": "bge-small",
+     "indicator": "Concept overlap",
+     "rho": "0.78",
+     "p": "0.84 [0.75, 0.92]",
+     "v": "0.87 [0.78, 0.95]"
+    },
+    {
+     "variant": "bge-small",
+     "indicator": "Citation overlap",
+     "rho": "0.78",
+     "p": "0.51 [0.37, 0.65]",
+     "v": "0.51 [0.38, 0.64]"
+    },
+    {
+     "variant": "bge-small",
+     "indicator": "Known concept pairs (graph)",
+     "rho": "1.00",
+     "p": "0.85 [0.76, 0.93]",
+     "v": "0.85 [0.76, 0.93]"
+    },
+    {
+     "variant": "bge-small",
+     "indicator": "Concept-pair association (graph)",
+     "rho": "1.00",
+     "p": "0.85 [0.76, 0.93]",
+     "v": "0.85 [0.76, 0.93]"
+    },
+    {
+     "variant": "bge-small",
+     "indicator": "New phrases",
+     "rho": "1.00",
+     "p": "0.80 [0.69, 0.89]",
+     "v": "0.80 [0.69, 0.89]"
+    },
+    {
+     "variant": "half-corpus",
+     "indicator": "Semantic similarity (max)",
+     "rho": "0.98",
+     "p": "0.96 [0.91, 0.99]",
+     "v": "0.96 [0.92, 0.99]"
+    },
+    {
+     "variant": "half-corpus",
+     "indicator": "Semantic similarity (top 10)",
+     "rho": "0.99",
+     "p": "0.62 [0.47, 0.74]",
+     "v": "0.62 [0.48, 0.74]"
+    },
+    {
+     "variant": "half-corpus",
+     "indicator": "Keyword overlap",
+     "rho": "0.98",
+     "p": "0.95 [0.89, 1.00]",
+     "v": "0.96 [0.90, 1.00]"
+    },
+    {
+     "variant": "half-corpus",
+     "indicator": "Concept overlap",
+     "rho": "0.76",
+     "p": "0.84 [0.75, 0.92]",
+     "v": "0.84 [0.74, 0.93]"
+    },
+    {
+     "variant": "half-corpus",
+     "indicator": "Citation overlap",
+     "rho": "0.91",
+     "p": "0.51 [0.37, 0.65]",
+     "v": "0.62 [0.49, 0.75]"
+    },
+    {
+     "variant": "half-corpus",
+     "indicator": "Known concept pairs (graph)",
+     "rho": "0.71",
+     "p": "0.85 [0.76, 0.93]",
+     "v": "0.87 [0.78, 0.94]"
+    },
+    {
+     "variant": "half-corpus",
+     "indicator": "Concept-pair association (graph)",
+     "rho": "0.74",
+     "p": "0.85 [0.76, 0.93]",
+     "v": "0.88 [0.79, 0.95]"
+    },
+    {
+     "variant": "half-corpus",
+     "indicator": "New phrases",
+     "rho": "0.97",
+     "p": "0.80 [0.69, 0.89]",
+     "v": "0.83 [0.73, 0.92]"
+    }
+   ]
+  }
+ ],
+ "notes": []
+}
