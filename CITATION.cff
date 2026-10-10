@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "LLM novelty vs recombination analyzer: do computational novelty indicators agree with judgments of novelty?"
+type: software
+authors:
+  - alias: rockys-stash
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/rockys-stash/llm-novelty-analyzer"
+keywords:
+  - novelty
+  - research ideation
+  - language models
+  - prior art
+  - bibliometrics
+references:
+  - type: article
+    title: "Atypical Combinations and Scientific Impact"
+    authors:
+      - family-names: Uzzi
+        given-names: Brian
+      - family-names: Mukherjee
+        given-names: Satyam
+      - family-names: Stringer
+        given-names: Michael
+      - family-names: Jones
+        given-names: Ben
+    journal: "Science"
+    volume: 342
+    issue: 6157
+    start: 468
+    end: 472
+    year: 2013
+  - type: article
+    title: "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers"
+    authors:
+      - family-names: Si
+        given-names: Chenglei
+      - family-names: Yang
+        given-names: Diyi
+      - family-names: Hashimoto
+        given-names: Tatsunori
+    conference:
+      name: "International Conference on Learning Representations (ICLR)"
+    year: 2025
