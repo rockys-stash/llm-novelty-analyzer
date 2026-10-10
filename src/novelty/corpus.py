@@ -55,23 +55,25 @@ def config() -> dict[str, Any]:
 
 _TAG = re.compile(r"<[^>]+>")
 _SPACE = re.compile(r"\s+")
+# inline formatting that survives as escaped text; never matches "<5 °C" or "a > b"
+_FORMAT = re.compile(r"</?(?:i|b|em|strong|sub|sup|scp|sc|u|span|mml:[a-z]+)(?:\s[^<>]*)?/?>", re.IGNORECASE)
 
 
 def clean_abstract(raw: str) -> str:
     """JATS XML to plain text: drop tags and a leading 'Abstract' heading, unescape entities."""
-    text = _TAG.sub(" ", raw)
-    text = html.unescape(_SPACE.sub(" ", text)).strip()
+    text = _FORMAT.sub("", html.unescape(_TAG.sub(" ", raw)))  # some records escape their markup (&lt;i&gt;)
+    text = _SPACE.sub(" ", text).strip()
     return re.sub(r"^(abstract|summary)\s*[:.]?\s*", "", text, flags=re.IGNORECASE)
 
 
 def parse(item: dict[str, Any]) -> Paper | None:
-    title = _SPACE.sub(" ", _TAG.sub("", " ".join(item.get("title") or []))).strip()
+    title = _SPACE.sub(" ", _FORMAT.sub("", html.unescape(_TAG.sub("", " ".join(item.get("title") or []))))).strip()
     abstract = clean_abstract(item.get("abstract") or "")
     if not title or len(abstract.split()) < 40:  # too short to say what the paper did
         return None
     parts = (item.get("issued") or {}).get("date-parts") or [[None]]
     refs = sorted({r["DOI"].lower() for r in item.get("reference") or [] if r.get("DOI")})
-    return Paper(item["DOI"].lower(), html.unescape(title), abstract, parts[0][0],
+    return Paper(item["DOI"].lower(), title, abstract, parts[0][0],
                  " ".join(item.get("container-title") or []), refs, int(item.get("is-referenced-by-count") or 0))  # fmt: skip
 
 

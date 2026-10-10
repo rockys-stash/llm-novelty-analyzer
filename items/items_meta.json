@@ -1,0 +1,37 @@
+[
+ {
+  "kind": "generate",
+  "commit": "5d477bd24a9c4e7520489de7ad2345ce4d19a143",
+  "dirty": false,
+  "started": "2026-10-10T17:38:04Z",
+  "config": {
+   "ideas_per_model": 8,
+   "idea_models": [
+    "qwen3-4b",
+    "phi-4-mini"
+   ],
+   "control_model": "qwen3-4b",
+   "paraphrase": 6,
+   "recombination": 6,
+   "later": 6,
+   "source_pool": 300,
+   "max_tokens": 220,
+   "temperature": 0.8,
+   "seed": 0
+  },
+  "models": {
+   "qwen3-4b": {
+    "file": "qwen3-4b-instruct-2507-q4_0.gguf",
+    "sha256": "e0ba675d86ab277c61701c6793659b2ae801d95e3be791464c321e6fbf613be2"
+   },
+   "phi-4-mini": {
+    "file": "phi-4-mini-instruct-q4_k_m.gguf",
+    "sha256": "88c00229914083cd112853aab84ed51b87bdf6b9ce42f532d8c85c7c63b1730a"
+   }
+  },
+  "llama_cpp_python": "0.3.36",
+  "prompt_version": "items-v1",
+  "jobs": 204,
+  "threads": "1"
+ }
+]
