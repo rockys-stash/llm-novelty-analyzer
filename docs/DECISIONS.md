@@ -64,9 +64,14 @@ arbitrary.
 **D11. Escaped markup in Crossref records.** Some records escape their inline markup
 (`&lt;i&gt;in situ&lt;/i&gt;`). The first cleaner removed tags before unescaping and left `<i>` in 55
 of 6,137 records. The cleaner now removes JATS tags, unescapes, then removes only inline formatting
-tags (so "&lt;5 °C" survives as "<5 °C"). The fix was made while item generation was running; the
-generation prompts for any control written from one of those 55 papers contained the literal tags.
+tags (so "&lt;5 °C" survives as "<5 °C"). The fix was made while item generation was running. Three of the
+144 papers that controls are written from are among the 55 (`federated-paraphrase-2`,
+`federated-later-5`, `crispr-paraphrase-5`); none had been generated yet, and generation was
+restarted after the fix so every prompt uses the cleaned text. The 18 items written before the
+restart come from unaffected papers or from topic labels only.
 
 **D12. Local generation threads.** Items were generated while Project 07's language-model run held
-three cores; generation started on one thread and resumed with more once the cores were free. Thread
-count changes speed, not output, for greedy decoding; sampled ideas use llama.cpp's seeded sampler.
+three cores; generation started on one thread and resumed with more once the cores were free. Every item
+records its seed. Thread count changes speed; it can also change floating-point summation order and so,
+rarely, a sampled token, which means regenerating on a different machine reproduces the procedure
+rather than guaranteeing identical text. The committed items are the data the experiments use.
