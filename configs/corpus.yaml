@@ -1,0 +1,30 @@
+# Literature corpus per topic, retrieved from Crossref (journal articles with an abstract and a
+# reference list). The prior-art corpus ends at `until`; papers published after `later_from` are
+# the "published later" controls (never in the corpus). `novelty fetch` rebuilds the corpus from
+# the DOI manifest in data/corpus_manifest.json, so a rerun sees exactly the same papers.
+source: crossref
+until: "2025-12-31"
+from: "2015-01-01"
+later_from: "2026-03-01"
+later_until: "2026-10-01"
+per_topic: 1000
+later_per_topic: 40
+topics:
+  calibration:
+    label: Uncertainty calibration of neural networks
+    query: uncertainty calibration deep neural networks confidence
+  battery:
+    label: Battery state-of-health estimation
+    query: lithium-ion battery state of health estimation machine learning
+  federated:
+    label: Privacy in federated learning
+    query: federated learning privacy preserving
+  crispr:
+    label: CRISPR off-target prediction
+    query: CRISPR Cas9 off-target prediction
+  urban_heat:
+    label: Urban heat island mitigation
+    query: urban heat island mitigation
+  misinformation:
+    label: Misinformation detection on social media
+    query: misinformation fake news detection social media

@@ -1,0 +1,5 @@
+bootstrap: 500
+seed: 0
+variants:
+  bge-small: {embedding: bge-small}
+  half-corpus: {embedding: minilm, limit: 500}

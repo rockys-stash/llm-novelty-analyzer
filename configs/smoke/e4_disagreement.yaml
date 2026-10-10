@@ -1,0 +1,3 @@
+seed: 0
+near_duplicate_quantile: 0.1   # semantic_max at or above this quantile of the paraphrase controls = near-duplicate
+known_pairs_quantile: 0.5      # kg_known_pairs at or above this quantile of the recombination controls = known combination

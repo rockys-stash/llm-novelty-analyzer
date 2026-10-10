@@ -1,0 +1,13 @@
+# Items to analyse, per topic. Every item is written in the same "Title / Idea" format by a local
+# language model, so the controls differ from the generated ideas in where their content comes from,
+# not in style (DECISIONS D3).
+ideas_per_model: 8              # "propose a new research idea" (sampled, temperature 0.8)
+idea_models: [qwen3-4b, phi-4-mini]
+control_model: qwen3-4b         # writes the three controls (greedy)
+paraphrase: 6                   # restate a corpus paper: known prior art
+recombination: 6                # combine two corpus papers: known recombination
+later: 6                        # restate a paper published after the corpus ends: not in the prior art
+source_pool: 300                # controls draw their source papers from the 300 most relevant
+max_tokens: 220
+temperature: 0.8
+seed: 0
