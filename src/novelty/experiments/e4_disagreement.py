@@ -80,6 +80,8 @@ def run(cfg: dict[str, Any], results: Path | None = None, items_path: Path | Non
         if n:
             s.findings.append(f"Of {n} generated ideas in {len(corpus.topics())} topics: {tot['near-duplicate']} near-duplicates of a prior "
                               f"paper, {tot['known combination']} known combinations, {tot['new combination']} new combinations of this literature.")  # fmt: skip
-        s.findings.append(f"{len(disagree)} ideas are less similar to any paper than the median idea, yet every one of their concept "
-                          "pairs already appears together in some prior paper: low similarity without new combinations.")  # fmt: skip
+        k = len(disagree)
+        s.findings.append(f"{k} {'idea is' if k == 1 else 'ideas are'} less similar to any paper than the median idea, yet every "
+                          f"one of {'its' if k == 1 else 'their'} concept pairs already appears together in some prior paper: "
+                          "low similarity without new combinations.")  # fmt: skip
     return rd.path
