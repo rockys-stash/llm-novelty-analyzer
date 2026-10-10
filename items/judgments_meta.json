@@ -1,0 +1,26 @@
+[
+ {
+  "kind": "judge",
+  "commit": "0f24b3577c40ba601017427a246a8bd5ceffab43",
+  "dirty": false,
+  "started": "2026-10-10T20:11:17Z",
+  "config": {
+   "judges": [
+    "qwen3-4b",
+    "phi-4-mini"
+   ]
+  },
+  "models": {
+   "qwen3-4b": {
+    "file": "qwen3-4b-instruct-2507-q4_0.gguf",
+    "sha256": "e0ba675d86ab277c61701c6793659b2ae801d95e3be791464c321e6fbf613be2"
+   },
+   "phi-4-mini": {
+    "file": "phi-4-mini-instruct-q4_k_m.gguf",
+    "sha256": "88c00229914083cd112853aab84ed51b87bdf6b9ce42f532d8c85c7c63b1730a"
+   }
+  },
+  "llama_cpp_python": "0.3.36",
+  "prompt_version": "judge-v1"
+ }
+]
