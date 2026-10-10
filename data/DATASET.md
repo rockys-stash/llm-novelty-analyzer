@@ -7,7 +7,7 @@
 | Source | Crossref REST API, `https://api.crossref.org/works` (metadata deposited by publishers) |
 | Query | per topic, `query.bibliographic=<topic query>` with `has-abstract:true, has-references:true, type:journal-article`, published 2015-01-01 to 2025-12-31 (corpus) or 2026-03-01 to 2026-10-01 (later papers) |
 | Retrieved | 2026-10-10; DOIs in `data/corpus_manifest.json` (committed), SHA-256 per topic and part |
-| Rebuild | `make data` rehydrates the manifest's DOIs into `data/raw/` (not committed) |
+| Rebuild | `make data` rehydrates the manifest's DOIs into `data/raw/` (not committed). The DOI set is fixed, but Crossref records can gain references after retrieval, so a later rebuild can differ slightly in reference counts and in numbers that depend on them (measured in [REVIEW](../docs/REVIEW.md): changes of at most 0.01) |
 | Licence | Crossref metadata is open (CC0, per Crossref). Abstracts are the publishers' and stay local; titles and DOIs are committed in results. |
 
 | Topic | Query | Corpus papers | Later papers |
