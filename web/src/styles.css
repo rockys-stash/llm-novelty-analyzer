@@ -1173,3 +1173,13 @@ tr.selected td {
   color: var(--ink);
   background: var(--accent-weak);
 }
+
+/* Long unbroken strings (DOIs, compound phrases from live metadata) must wrap on narrow screens. */
+.grid-2 > *,
+.neighbours > li {
+  min-width: 0;
+}
+.neighbours,
+.chip {
+  overflow-wrap: anywhere;
+}
