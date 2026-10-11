@@ -158,6 +158,7 @@ export function Item() {
                   Model judges (a pilot, not human judgments): local language models answering the annotation rubric
                   without seeing the item's kind or any indicator. Score = expected value of the judge's 1–5 distribution.
                 </p>
+                <div className="table-wrap" tabIndex={0} role="region" aria-label="Model-judge scores">
                 <table className="compact">
                   <caption className="sr-only">Model-judge scores for this item</caption>
                   <thead>
@@ -185,6 +186,7 @@ export function Item() {
                     ))}
                   </tbody>
                 </table>
+                </div>
               </>
             ) : (
               <Empty title="No model judgments yet">
